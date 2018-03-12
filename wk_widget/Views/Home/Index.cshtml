@@ -1,0 +1,14 @@
+﻿@using TXTextControl.Web.MVC
+@using TXTextControl.Web
+
+@Html.TXTextControl().TextControl(settings =>
+{
+    settings.Dock = DockStyle.Window;
+}).Render()
+
+
+<div class="beta">
+    <strong>Technology Preview Beta Version</strong> - &copy; Copyright 2018, Text Control
+</div>
+
+<script src="~/Scripts/txtextcontrol.web.server.js"></script>

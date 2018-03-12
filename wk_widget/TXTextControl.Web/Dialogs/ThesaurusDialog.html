@@ -1,0 +1,128 @@
+<div id="thesaurusDialog" class="txDialog">
+	<style>
+		#thesaurusDialog_layoutTable {
+			border-collapse: collapse;
+		}
+
+		#thesaurusDialog_layoutTable label {
+			margin-bottom: 2px;
+		}
+
+		.thesaurusDialog_tblItems {
+			width: 100%;
+		}
+
+		.thesaurusDialog_tblItems,
+		#thesaurusDialog_tvSynonyms {
+			border-collapse: collapse;
+			background-color: white;
+		}
+
+		.thesaurusDialog_tblItems td,
+		#thesaurusDialog_tvSynonyms td {
+			border: none;
+			padding: 0px !important;
+		}
+
+		.thesaurusDialog_itemsWrapper {
+			width: 100%;
+			overflow: hidden;
+			transition: height 0.3s;
+		}
+
+		.thesaurusDialog_tblItems,
+		#thesaurusDialog_tvSynonyms {
+			cursor: default;
+		}
+
+		.thesaurusDialog_tblItems:focus,
+		#thesaurusDialog_tvSynonyms:focus {
+			outline: none;
+		}
+
+		.thesaurusDialog_tblItems td:last-child,
+		#thesaurusDialog_tvSynonyms td:last-child {
+			width: 100%;
+		}
+
+		.thesaurusDialog_tblItems td svg,
+		#thesaurusDialog_tvSynonyms td svg {
+			display: block;
+		}
+
+		.thesaurusDialog_tblItems tr.selected,
+		#thesaurusDialog_tvSynonyms tr.selected {
+			background-color: #C2D5F2;
+		}
+
+		#thesaurusDialog_tvSynonyms tr.treeNode:hover,
+		.thesaurusDialog_tblItems tr:hover {
+			background-color: #D5E1F2;
+		}
+
+		#thesaurusDialog_btnBack {
+			width: 14px;
+			height: 14px;
+			font-size: 12px;
+			margin: 0px;
+			padding: 1px;
+		}
+
+		#thesaurusDialog_cbLanguage:focus {
+			outline: initial;
+		}
+
+		#thesaurusDialog_txtFindSynonymsFor {
+			width: 150px;
+		}
+
+		#thesaurusDialog_cbLanguage {
+			width: 160px;
+		}
+
+		#thesaurusDialog_tvSynonyms p {
+			margin: 0px;
+		}
+
+		p.noAltText {
+			color: gray;
+		}
+
+		#thesaurusDialog_treeViewWrapper {
+			border: 1px solid darkgray;
+			height: 300px;
+			width: 360px;
+			overflow: auto;
+			background-color: white;
+		}
+	</style>
+	<table id="thesaurusDialog_layoutTable">
+		<tr>
+			<td>&nbsp;</td>
+			<td><label id="THESAURUS_DLG_LBL_FIND_SYN_FOR" for="thesaurusDialog_txtFindSynonymsFor"></label></td>
+			<td><label id="THESAURUS_DLG_LBL_LANGUAGE" for="thesaurusDialog_cbLanguage"></label></td>
+		</tr>
+		<tr>
+			<td>
+				<button type="button" id="thesaurusDialog_btnBack" tabindex="0">◄</button>
+			</td>
+			<td>
+				<input type="text" id="thesaurusDialog_txtFindSynonymsFor" tabindex="1">
+			<td>
+				<select id="thesaurusDialog_cbLanguage" tabindex="2"></select>
+			</td>
+		</td></tr>
+		<tr>
+			<td colspan="3">
+				<label id="THESAURUS_DLG_LBL_SYNONYMS" for="thesaurusDialog_tvSynonyms" style="margin-top: 8px"></label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<div id="thesaurusDialog_treeViewWrapper">
+					<table id="thesaurusDialog_tvSynonyms" tabindex="3" class="unselectable"></table>
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,51 @@
+<style>
+	#ifFieldDialog textarea {
+		width: 98%;
+	}
+
+	#ifFieldDialog label {
+		margin-bottom: 0px;
+	}
+</style>
+<div id="ifFieldDialog" class="txDialog">
+	<form>
+		<fieldset id="IF_FIELD_GROUP_BOX">
+			<legend></legend>
+			<table>
+				<tr>
+					<td>
+						<label id="IF_FIELD_LABEL_NAME" for="txtFieldName"></label>
+					</td>
+					<td>
+						<label id="IF_FIELD_LABEL_COMPARISON"></label>
+					</td>
+					<td>
+						<label id="IF_FIELD_LABEL_COMPARE_TO" for="txtCompareTo"></label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" id="txtFieldName" style="width: 90px;">
+					</td>
+					<td>
+						<select id="selIfFldOperators" style="width: 110px;">
+							<option id="IF_FIELD_COMBO_BOX_COMPARISON_EQUALS">
+							<option id="IF_FIELD_COMBO_BOX_COMPARISON_NOT_EQUAL">
+							<option id="IF_FIELD_COMBO_BOX_COMPARISON_LESS">
+							<option id="IF_FIELD_COMBO_BOX_COMPARISON_GREATER">
+							<option id="IF_FIELD_COMBO_BOX_COMPARISON_GREATER_OR_EQUAL">
+							<option id="IF_FIELD_COMBO_BOX_COMPARISON_LESS_OR_EQUAL">
+						</select>
+					</td>
+					<td>
+						<input type="text" id="txtCompareTo" style="width: 90px;">
+					</td>
+				</tr>
+			</table>
+			<label id="IF_FIELD_LABEL_INSERT_THIS" for="txtInsertThis" style="float: left; clear: both; margin-top: 5px"></label>
+			<textarea id="txtInsertThis"></textarea>
+			<label id="IF_FIELD_LABEL_OTHERWISE" for="txtOtherwise"></label>
+			<textarea id="txtOtherwise"></textarea>
+		</fieldset>
+	</form>
+</div>

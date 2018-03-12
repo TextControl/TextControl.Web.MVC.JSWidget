@@ -1,0 +1,650 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD56EF32-F140-48BC-B9D1-67FAA10AD0F6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TextControlJSWidget</RootNamespace>
+    <AssemblyName>TextControlJSWidget</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="TXTextControl.Web.MVC, Version=25.0.500.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <HintPath>..\packages\TXTextControl.Web.25.0.501.500\lib\net45\TXTextControl.Web.MVC.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\editor.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\txtextcontrol.web.js" />
+    <Content Include="Scripts\txtextcontrol.web.server.js" />
+    <Content Include="TXTextControl.Web\CSS\images\animated-overlay.gif" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-icons_222222_256x240.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-icons_454545_256x240.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-icons_888888_256x240.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="TXTextControl.Web\CSS\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="TXTextControl.Web\CSS\jquery-ui.css" />
+    <Content Include="TXTextControl.Web\CSS\main.css" />
+    <Content Include="TXTextControl.Web\cursors\Markline.cur" />
+    <Content Include="TXTextControl.Web\cursors\tablecol.cur" />
+    <Content Include="TXTextControl.Web\Dialogs\ClientPasteDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\EdgePrintDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\FontDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\HyperlinkDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\InputBoxDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\LoadDictionaryDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\LoadThesaurusDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\CreateDataRelationDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\DateFieldDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\EditDataRelationsDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\EditMergeBlocksDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\IfFieldDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\IncludeTextFieldDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\InsertMergeBlockDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\MaxPreviewRowsDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\MergeFieldDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\SetChartDataRelationDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\OpenFileDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\OptionsDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\PermissionsAddUserDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\SaveDocumentAsDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\SpellCheckDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\ThesaurusDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\TxDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\WaitDialog.html" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodeazteccode.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodecodabar.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodecode11.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodecode128.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodecode39.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodecode93.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodedatamatrix.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodeean13.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodeean8.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodefourstate.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodeintelligentmail.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodeinterleaved2of5.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodemaxicode.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodemicropdf.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodepdf417.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodeplanet.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodepostnet.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodeqrcode.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcoderoyalmail.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Barcode\barcodeupca.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\chartgridlinesmajorhor.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartaxes.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartaxeslefttoright.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartaxesrighttoleft.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartaxeswithoutlabeling.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartaxistitle.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartaxistitlehor.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartaxistitlevert.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartdatalabels.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartdatatable.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartdatatablelegend.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\charteditdata.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartformat.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartgridlines.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartgridlinesmajorandminorhor.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartgridlinesmajorandminorvert.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartgridlinesmajorhor.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartgridlinesmajorvert.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartgridlinesminorhor.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartgridlinesminorvert.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartlegend.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartlegendbottom.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartlegendleft.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartlegendright.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartlegendtop.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartnoaxes.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartnoaxistitle.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartnodatalabels.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartnodatatable.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartnogridlines.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartnogridlinesvert.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartnolegend.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartnotitle.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\chartsetdatarelation.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\charttitlemain.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\Chart\charttitletop.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\clientpaste.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\columnsdialog.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\deletebookmark.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\deletefooter.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\deleteheader.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\deletehyperlink.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\deletepagenumber.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\deletetable.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\deletetablecell.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\deletetablecol.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\deletetablerow.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\editbookmark.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\edithyperlink.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\footer.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\header.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\hyphenation.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\image.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\imageplaceholder.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\insertbookmark.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\insertchart.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\insertfile.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\inserthyperlink.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\insertpagecolumnbreak.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\insertpagenumber.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\insertsectionbreakpage.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\insertsectionbreakparagraph.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\insertshapes.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\insertsymbol.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\inserttablecolleft.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\inserttablecolright.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\inserttablerowabove.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\inserttablerowbelow.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\languagedetection.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\list123.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\listabc.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\listabccapital.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\listarrow.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\listasterisk.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\listdash.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\listdiamond.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\listdisc.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\listroman.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\listromancapital.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\liststruct123.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\liststructabc.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\liststructabccapital.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\liststructroman.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\liststructromancapital.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\loaddictionary.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergedatasource.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergedatasourceconfig.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergedatatable.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergedatefield.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergedeleteblock.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergedeletefield.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeeditblocks.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeeditdatarelations.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergefieldproperties.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergefinish.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergefirstrecord.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergehighlightblocks.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergehighlightfields.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeiffield.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeincludetextfield.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeinsertblock.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeinsertfield.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeintocurrentdoc.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeintoindivfiles.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeintosinglefile.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergelastrecord.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergenextfield.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergenextiffield.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergenextrecord.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergepreview.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergepreviousrecord.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeprint.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeshowfieldcodes.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergeshowfieldtext.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mergetablecells.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\mousecursor.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\newpage.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\objectaligncenter.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\objectalignleft.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\objectalignright.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\objectbehindtext.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\objectdialog.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\objectiddialog.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\objectinfrontoftext.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\objectinlinewithtext.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\objectname.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\objecttopandbottom.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\open.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\opendemo.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\options.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pagebackgroundcolor.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pageborders.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pagebreak.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pagecolumnsone.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pagecolumnsthree.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pagecolumnstwo.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pagedialog.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pageframedialog.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pagenumberbottom.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pagenumbertop.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pageorientation.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pageorientationlandscape.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pageorientationportrait.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pagesize.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pageviewnormal.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\pageviewprint.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\paste.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\previewclose.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\print.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\proofingoptions.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\save.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\saveas.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\saveaspdf.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\selecttable.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\selecttablecell.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\selecttablecol.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\selecttablerow.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\setlanguage.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\shapefill.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\shapeoutline.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\shapestyles.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\showbookmarkmarkers.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\showtextframemarkerlines.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\spellasyoutype.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\spelling.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\splittable.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\splittableabove.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\splittablebelow.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\splittablecells.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\styledialog.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\styledialog.svg" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\table.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\tableborderbox.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\tabledialog.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\tablegridlines.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\test.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\textflow.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\textframe.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\textwrappingbreak.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\zoom.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\zoom100.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\zoompageheight.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\zoompagewidth.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\zorderbottom.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\zorderbottommost.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\zorderdown.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\zordertop.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\zordertopmost.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\zorderup.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\aligncenter.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\alignjustify.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\alignleft.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\alignright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\anchor.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\autobackcolor.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\autoforecolor.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\barcodealignmentcenter.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\barcodealignmentleft.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\barcodealignmentright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\barcodeqrcode.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\barcodevertalignmentbottom.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\barcodevertalignmentcenter.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\barcodevertalignmenttop.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\bookmarkmarkers.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\borderall.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\borderbottom.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\borderbox.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\borderinnerhor.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\borderinnervert.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\borderleft.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\borderright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\bordertop.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellalignbottomcentered.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellalignbottomjustified.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellalignbottomleft.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellalignbottomright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellalignmiddlecentered.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellalignmiddlejustified.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellalignmiddleleft.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellalignmiddleright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellaligntopcentered.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellaligntopjustified.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellaligntopleft.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellaligntopright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\charactersettings.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chart.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartarea.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartauto.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartbar.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartcolumn.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartdatatable.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\charteditdata.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartformat.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartinclination.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartis3d.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartlabeledit.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartlegend.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartline.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartperspective.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartpie.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartrightangleaxes.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartrotation.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\chartsetdatarelation.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\charttitle.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\charttype.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\checkmark.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\colordialog.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\copy.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cut.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\dialoglauncher.svg" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\dockingbottom.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\dockingleft.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\dockingright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\dockingtop.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\drawing.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\drawingmarkerlines.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\find.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\fontbold.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\fontcolor.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\fontdialog.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\fontitalic.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\fontsizedecrease.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\fontsizeincrease.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\fontunderline.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\formattedtext.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\goto.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\highlightcolor.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\image.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\indentafter.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\indentbefore.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\indentdecrease.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\indentincrease.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\indentincrease.svg" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\indentright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\insertchart.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\legendhorizontalalignment.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\legendverticalalignment.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\linedash.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\linedashdot.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\linedashdotdot.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\linedashtype.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\linedot.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\linesolid.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\linespacing.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\listbullet.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\listdialog.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\liststructured.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\mailmergedeletefield.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\mailmergefieldproperties.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\moresymbols.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\mousecursor.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\newpage.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectbehindtext.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectbringforward.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectbringinfrontoftext.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectbringtofront.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectheight.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectid.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectinlinewithtext.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectlayoutandposition.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectname.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectopacity.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectpositioncenter.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectpositionleft.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectpositionother.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectpositionright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectproperties.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectsendbackward.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectsendbehindtext.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectsendtoback.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectsquare.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objecttopandbottom.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\objectwidth.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\open.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\pageborderall.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\pageborderbottom.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\pageborderleft.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\pageborderright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\pagebordertop.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\pageorientationportrait.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\paradialog.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\paragraphbackcolor.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\paragraphsettings.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\paragraphsign.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\paste.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\print.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\redo.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\replace.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\save.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\selectall.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapefliphorizontally.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeflipvertically.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapenofill.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapenooutline.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlinemorelines.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlineweight.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlineweight025.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlineweight050.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlineweight075.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlineweight100.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlineweight150.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlineweight225.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlineweight300.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlineweight450.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shapeoutlineweight600.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shaperotate180.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shaperotateleft90.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\shaperotateright90.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\strikethrough.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\styledialog.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\styles.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\subscript.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\superscript.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\table.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\tablegridlines.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\tablelinecolor.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\tablelinewidth.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\tabs.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\textdirection.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\textdirltr.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\textdirrtl.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\textframe.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\textframemarkerlines.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\tx_icon16.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\undo.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\unformattedtext.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\xaxisalignment.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\xaxisinterval.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\xaxisline.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\xaxismajorgridlines.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\xaxismaximum.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\xaxisminimum.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\xaxisminorgridlines.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\xaxistitle.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\yaxisalignment.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\yaxisinterval.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\yaxisline.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\yaxismajorgridlines.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\yaxismaximum.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\yaxisminimum.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\yaxisminorgridlines.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\yaxistitle.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\zoom100percent.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\zoomfullpage.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\zoompageheight.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\zoompagewidth.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\zoomtotext.png" />
+    <Content Include="TXTextControl.Web\Icons\web\ajax_loader.gif" />
+    <Content Include="TXTextControl.Web\Icons\web\ribbon_show_hide_arrow_sprites.png" />
+    <Content Include="TXTextControl.Web\Icons\web\scrollbar_arrow_sprites.png" />
+    <Content Include="TXTextControl.Web\JS\ThirdParty\jquery-1.10.2.min.js" />
+    <Content Include="TXTextControl.Web\JS\ThirdParty\jquery-ui-1.10.2.min.js" />
+    <Content Include="TXTextControl.Web\JS\ThirdParty\jquery.ui.touch-punch.min.js" />
+    <Content Include="TXTextControl.Web\JS\tx-min.js" />
+    <Content Include="TXTextControl.Web\Ribbon\RibbonTabFrameFormatting.html" />
+    <Content Include="TXTextControl.Web\Ribbon\RibbonTabHome.html" />
+    <Content Include="TXTextControl.Web\Ribbon\RibbonTabInsert.html" />
+    <Content Include="TXTextControl.Web\Ribbon\RibbonTabPageLayout.html" />
+    <Content Include="TXTextControl.Web\Ribbon\RibbonTabReports.html" />
+    <Content Include="TXTextControl.Web\Ribbon\RibbonTabTableLayout.html" />
+    <Content Include="TXTextControl.Web\Ribbon\RibbonTabView.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TXPrintController.cs" />
+    <Compile Include="Controllers\TXWebSocketController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1303</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1303/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

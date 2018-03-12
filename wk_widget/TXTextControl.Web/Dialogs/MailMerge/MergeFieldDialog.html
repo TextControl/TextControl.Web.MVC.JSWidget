@@ -1,0 +1,49 @@
+<div id="mergeFieldDialog" class="txDialog">
+    <style>
+        #mergeFieldDialog td {
+            vertical-align: top
+        }
+    </style>
+    <form>
+        <table style="border-collapse: collapse">
+            <tr>
+                <td>
+                    <fieldset id="MERGEFIELD_GROUP_FIELD_PROPERTIES">
+                        <legend></legend>
+                        <label id="MERGEFIELD_LABEL_NAME" for="txtFieldName"></label>
+                        <input type="text" id="txtFieldName" style="width: 190px">
+                        <label id="MERGEFIELD_LABEL_TEXT" for="txtFieldText"></label>
+                        <input type="text" id="txtFieldText" style="width: 190px">
+                        <label id="MERGEFIELD_LABEL_FORMAT" for="selMergeFieldFormat"></label>
+                        <select size="6" id="selMergeFieldFormat" style="width: 190px">
+                            <option id="MERGEFIELD_FORMAT_NONE">
+                            <option id="MERGEFIELD_FORMAT_UPPER">
+                            <option id="MERGEFIELD_FORMAT_LOWER">
+                            <option id="MERGEFIELD_FORMAT_FIRST_CAP">
+                            <option id="MERGEFIELD_FORMAT_TITLE_CASE">
+                        </select>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset id="MERGEFIELD_GROUP_FIELD_OPTIONS">
+                        <legend></legend>
+                        <input type="checkbox" id="chkTextBefore" style="float: left">
+                        <label id="MERGEFIELD_LABEL_TEXT_BEFORE" for="chkTextBefore" style="float: left"></label>
+                        <input type="text" id="txtTextBefore" disabled="disabled" style="float: left; clear: both; width: 180px">
+                        <input type="checkbox" id="chkTextAfter" style="float: left; clear: left">
+                        <label id="MERGEFIELD_LABEL_TEXT_AFTER" for="chkTextAfter" style="float: left"></label>
+                        <input type="text" id="txtTextAfter" disabled="disabled" style="float: left; clear: both; width: 180px">
+                        <input type="checkbox" id="chkDateTimeFormat" style="float: left; clear: left">
+                        <label id="MERGEFIELD_LABEL_DATE_TIME_FORMAT" for="chkDateTimeFormat" style="float: left"></label>
+                        <input type="text" id="txtDateTimeFormat" disabled="disabled" style="float: left; clear: both; width: 180px">
+                        <input type="checkbox" id="chkNumericFormat" style="float: left; clear: left">
+                        <label id="MERGEFIELD_LABEL_NUMERIC_FORMAT" for="chkNumericFormat" style="float: left"></label>
+                        <input type="text" id="txtNumericFormat" disabled="disabled" style="float: left; clear: both; width: 180px">
+                        <input type="checkbox" id="chkPreserveFormat" style="float: left; clear: left">
+                        <label id="MERGEFIELD_CHECK_BOX_PRESERVE_FORMAT" for="chkPreserveFormat" style="float: left; width: 180px"></label>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

@@ -1,0 +1,19 @@
+﻿html, body {
+    margin: 0;
+}
+
+#tabFile, #btnLoadDBScheme, #btnInsertFile, #mnuItemInsertImage:first-child {
+    display: none !important;
+}
+
+.beta {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    bottom: 22px;
+    opacity: .4;
+    text-align: center;
+    z-index: 999;
+    background-color: red;
+    width: 100%;
+    pointer-events: none;
+}

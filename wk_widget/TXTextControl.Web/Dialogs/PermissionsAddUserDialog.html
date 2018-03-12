@@ -1,0 +1,112 @@
+<div id="permissionsAddUserDialog" class="txDialog">
+	<style>
+		#permissionsAddUserDialog_layoutTable {
+			border-collapse: collapse;
+		}
+
+		#permissionsAddUserDialog button {
+			min-width: 60px;
+			padding: 5px 7px;
+			border: 1px solid #acacac;
+			background: #e5e5e5;
+			cursor: pointer;
+			font-weight: 400;
+			color: #555555;
+		}
+
+			#permissionsAddUserDialog button:hover {
+				border: 1px solid #7eb4ea;
+				background: #e3f0fc;
+			}
+
+		#permissionsAddUserDialog_btnDelete {
+			position: absolute;
+			left: 17px;
+		}
+
+		#permissionsAddUserDialog_lbUsers {
+			width: 300px;
+			height: 95px;
+			overflow-x: hidden;
+			overflow-y: auto;
+			font-size: 12px !important;
+			float: left;
+			clear: left;
+			border: 1px solid grey;
+			background: white;
+		}
+
+			#permissionsAddUserDialog_lbUsers div {
+				width: 100%;
+				float: left;
+				clear: left;
+			}
+
+				#permissionsAddUserDialog_lbUsers div.selected {
+					background-color: #C2D5F2;
+				}
+
+				#permissionsAddUserDialog_lbUsers div:hover {
+					background-color: #D5E1F2;
+				}
+
+				#permissionsAddUserDialog_lbUsers div p {
+					margin: 0px 3px;
+				}
+
+		#permissionsAddUserDialog label {
+			margin-bottom: 5px;
+		}
+
+		#permissionsAddUserDialog_txtNewUser, #permissionsAddUserDialog_cbRegUsers {
+			width: 220px;
+			margin-right: 3px;
+		}
+
+		.permissionsAddUserDialog_spacerRow {
+			height: 5px
+		}
+	</style>
+	<table id="permissionsAddUserDialog_layoutTable">
+		<colgroup>
+			<col>
+			<col width="60">
+			<col>
+			<col>
+		</colgroup>
+		<tr id="permissionsAddUserDialog_rowLblNewUser">
+			<td colspan="4">
+				<label for="permissionsAddUserDialog_txtNewUser" id="PERMISSIONSADDUSER_DLG_LBL_NEW_USER"></label>
+			</td>
+		</tr>
+		<tr id="permissionsAddUserDialog_rowNewUser">
+			<td colspan="3">
+				<input type="text" id="permissionsAddUserDialog_txtNewUser">
+			</td>
+			<td>
+				<button type="button" id="permissionsAddUserDialog_btnAdd"></button>
+			</td>
+		</tr>
+		<tr id="permissionsAddUserDialog_rowLblRegUsers">
+			<td colspan="4">
+				<label for="permissionsAddUserDialog_cbRegUsers" id="PERMISSIONSADDUSER_DLG_LBL_REG_USERS"></label>
+			</td>
+		</tr>
+		<tr id="permissionsAddUserDialog_rowRegUsers">
+			<td colspan="3">
+				<select id="permissionsAddUserDialog_cbRegUsers"></select>
+			</td>
+		</tr>
+		<tr class="permissionsAddUserDialog_spacerRow"></tr>
+		<tr>
+			<td colspan="4">
+				<label for="permissionsAddUserDialog_lbUsers" id="PERMISSIONSADDUSER_DLG_LBL_USERS"></label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+				<div id="permissionsAddUserDialog_lbUsers" class="unselectable"></div>
+			</td>
+		</tr>
+	</table>
+</div>

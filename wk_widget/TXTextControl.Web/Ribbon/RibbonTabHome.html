@@ -1,0 +1,1001 @@
+<!-- Clipboard group -->
+
+<div class="ribbon-group" id="ribbonGroupClipboard">
+	<div class="ribbon-group-content">
+		<!-- "Paste Source" toggle button -->
+		<div id="localClipboardButtonContainer" style="display: inline-block; float: left; border-right: 1px solid #bbbbbb; margin-right: 5px">
+			<div class="ribbon-button ribbon-button-big ribbon-button-selected" id="tglBtnLocalClipboard">
+				<div class="ribbon-button-big-image-container">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-big-image" data-orig-src="Icons/large_32bit/clientpaste.png">
+				</div>
+				<div class="ribbon-button-big-label-container">
+					<p class="ribbon-button-label"><!-- Local<br />Clipboard --></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Paste button -->
+		<div class="ribbon-button ribbon-button-big" id="btnPaste">
+			<div class="ribbon-button-big-image-container">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-big-image" data-orig-src="Icons/large_32bit/paste.png">
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label">
+					<span class="ribbon-button-label-text"><!-- Paste --></span>
+					<span class="drop-down-arrow-large">▼</span>
+				</p>
+			</div>
+		</div>
+
+		<div class="ribbon-button-wrapper-small-stacked-buttons">
+			<!-- Cut button -->
+			<div class="ribbon-button ribbon-button-small" id="btnCut">
+				<div class="ribbon-button-small-image-container">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-small-image" data-orig-src="Icons/small_32bit/cut.png">
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Cut --></p>
+				</div>
+			</div>
+
+			<!-- Copy button -->
+			<div class="ribbon-button ribbon-button-small" id="btnCopy">
+				<div class="ribbon-button-small-image-container">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-small-image" data-orig-src="Icons/small_32bit/copy.png">
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Copy --></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Ribbon group label -->
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Clipboard --></p>
+	</div>
+</div>
+
+<!-- Font group -->
+
+<div class="ribbon-group" id="ribbonGroupFont">
+	<div class="ribbon-group-content">
+		<div class="ribbon-group-content-row">
+			<div class="ribbon-group-button-group">
+				<select id="selectFont"></select>
+				<select id="selectFontSize"></select>
+			</div>
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="btnFontGrow">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/fontsizeincrease.png">
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="btnFontShrink">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/fontsizedecrease.png">
+				</div>
+			</div>
+		</div>
+		<div class="ribbon-group-content-row">
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnBold">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/fontbold.png">
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnItalic">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/fontitalic.png">
+				</div>
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnUnderlineStyles">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/fontunderline.png">
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnStrikethrough">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/strikethrough.png">
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnSubscript">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/subscript.png">
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnSuperscript">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/superscript.png">
+				</div>
+			</div>
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnTextHighlightColor">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/highlightcolor.png">
+				</div>
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnTextColor">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/fontcolor.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Font --></p>
+	</div>
+	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="txDialogLauncher" id="btnDlgLnchFontGrp" width="16" height="16" style="opacity: 0" data-orig-src="Icons/small_32bit/dialoglauncher.svg">
+</div>
+
+<!-- Paragraph group -->
+
+<div class="ribbon-group" id="ribbonGroupParagraph">
+	<div class="ribbon-group-content">
+		<div class="ribbon-group-content-row">
+			<!-- List buttons -->
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnBulletList">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/listbullet.png">
+				</div>
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnNumberedList">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/listdialog.png">
+				</div>
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnStructuredList">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/liststructured.png">
+				</div>
+			</div>
+
+			<!-- Indent increase / decrease -->
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="btnIndentDecrease">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/indentdecrease.png">
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="btnIndentIncrease">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/indentincrease.png">
+				</div>
+			</div>
+
+			<!-- Text direction rtl / ltr -->
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnTextDirLTR">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/textdirltr.png">
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnTextDirRTL">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/textdirrtl.png">
+				</div>
+			</div>
+
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="btnTabs">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/tabs.png">
+				</div>
+			</div>
+
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnControlChars">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/paragraphsign.png">
+				</div>
+			</div>
+		</div>
+		<div class="ribbon-group-content-row">
+			<!-- Paragraph alignment -->
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnAlignLeft">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/alignleft.png">
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnAlignCenter">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/aligncenter.png">
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnAlignRight">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/alignright.png">
+				</div>
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnAlignJust">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/alignjustify.png">
+				</div>
+			</div>
+
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnLineSpacing">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/linespacing.png">
+				</div>
+			</div>
+
+			<div class="ribbon-group-button-group">
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnBorders">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/borderbox.png">
+				</div>
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnBackColor">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/paragraphbackcolor.png">
+				</div>
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnFrameColor">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/tablelinecolor.png">
+				</div>
+				<div class="ribbon-button ribbon-dropdown-button-tiny" id="drpDnBtnFrameLineWidth">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/tablelinewidth.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Paragraph --></p>
+	</div>
+	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="txDialogLauncher" id="btnDlgLnchParGrp" width="16" height="16" style="opacity: 0" data-orig-src="Icons/small_32bit/dialoglauncher.svg">
+</div>
+
+<!-- Styles group -->
+
+<div class="ribbon-group" id="ribbonGroupStyles">
+	<div class="ribbon-group-content">
+		<div class="ribbon-button ribbon-button-big" id="drpDnBtnStyles">
+			<div class="ribbon-button-big-image-container">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-big-image" data-orig-src="Icons/large_32bit/styledialog.png">
+			</div>
+			<div class="ribbon-button-big-label-container">
+				<p class="ribbon-button-label">
+					<span class="ribbon-button-label-text"></span>
+					<span class="drop-down-arrow-large">▼</span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Styles --></p>
+	</div>
+</div>
+
+<!-- Editing group -->
+
+<div class="ribbon-group" id="ribbonGroupEditing">
+	<div class="ribbon-group-content">
+		<div class="ribbon-button-wrapper-small-stacked-buttons" style="float: left">
+			<!-- Undo button -->
+			<div class="ribbon-button ribbon-button-small" id="btnUndo">
+				<div class="ribbon-button-small-image-container">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-small-image" data-orig-src="Icons/small_32bit/undo.png">
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Undo --></p>
+				</div>
+			</div>
+
+			<!-- Redo button -->
+			<div class="ribbon-button ribbon-button-small" id="btnRedo">
+				<div class="ribbon-button-small-image-container">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-small-image" data-orig-src="Icons/small_32bit/redo.png">
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Redo --></p>
+				</div>
+			</div>
+
+			<!-- Find button -->
+			<div class="ribbon-button ribbon-button-small" id="btnFind">
+				<div class="ribbon-button-small-image-container">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-small-image" data-orig-src="Icons/small_32bit/find.png">
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Find --></p>
+				</div>
+			</div>
+		</div>
+		<div class="ribbon-button-wrapper-small-stacked-buttons" style="float: left">
+			<!-- Replace button -->
+			<div class="ribbon-button ribbon-button-small" id="btnReplace">
+				<div class="ribbon-button-small-image-container">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-small-image" data-orig-src="Icons/small_32bit/replace.png">
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Replace --></p>
+				</div>
+			</div>
+
+			<!-- Select All button -->
+			<div class="ribbon-button ribbon-button-small" id="btnSelectAll">
+				<div class="ribbon-button-small-image-container">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-small-image" data-orig-src="Icons/small_32bit/selectall.png">
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Select All --></p>
+				</div>
+			</div>
+
+			<!-- Select Objects -->
+			<div class="ribbon-button ribbon-button-small ribbon-stacked-toggle-button" id="btnSelectObjects">
+				<div class="ribbon-button ribbon-button-tiny" id="tglBtnSelectObjects">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" class="ribbon-button-small-image" data-orig-src="Icons/small_32bit/mousecursor.png">
+				</div>
+				<div class="ribbon-button-small-label-container">
+					<p class="ribbon-button-label"><!-- Select Objects --></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ribbon-group-label-container">
+		<p class="ribbon-group-label"><!-- Editing --></p>
+	</div>
+</div>
+
+<!-------------------------------------------------------------------------------------------->
+<!-- DROPDOWN MENUS -->
+<!-------------------------------------------------------------------------------------------->
+<!-- Paste dropdown menu -->
+<ul id="pasteDropDown" class="dropDownMenu">
+	<!-- Server Paste -->
+	<li id="mnuItemServerPaste" class="txui-state-disabled">
+		<a>
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/paste.png">
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- Server Paste --></h1>
+				<p><!-- Paste on the Server. --></p>
+			</div>
+		</a>
+	</li>
+	<!-- Client Paste -->
+	<li id="mnuItemClientPaste">
+		<a>
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/clientpaste.png">
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- Client Paste --></h1>
+				<p><!-- Paste local clipboard content or drag and drop documents. --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Clipboard format menu -->
+<ul id="clipboardFormatDropDown" class="dropDownMenu">
+	<li id="mnuItemClipFmt_FormattedText" class="txui-state-disabled" data-format-names="RichTextFormat, TXTextControlFormat, HTMLFormat">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/formattedtext.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Formatted Text --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemClipFmt_UnformattedText" class="txui-state-disabled" data-format-names="PlainText">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/unformattedtext.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Unformatted Text --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemClipFmt_Image" class="txui-state-disabled" data-format-names="Image, TXTextControlImage">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/image.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Image --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemClipFmt_TextFrame" class="txui-state-disabled" data-format-names="TXTextControlTextframe">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/textframe.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Text Frame --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemClipFmt_Chart" class="txui-state-disabled" data-format-names="Chart">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/chart.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Chart --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemClipFmt_Barcode" class="txui-state-disabled" data-format-names="Barcode">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/barcodeqrcode.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Barcode --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemClipFmt_Drawing" class="txui-state-disabled" data-format-names="Drawing">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/drawing.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Drawing --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Underline styles dropdown menu -->
+<ul id="ulStylesDropDown" class="dropDownMenu">
+	<li id="mnuItemULStyleSingle">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnULStyleSingle">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/checkmark.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Single --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemULStyleDoubled">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnULStyleDoubled">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/checkmark.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Doubled --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemULStyleSingleWO">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnULStyleSingleWO">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/checkmark.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Single, only words --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemULStyleDoubledWO">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnULStyleDoubledWO">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/checkmark.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Doubled, only words --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Text highlight color menu -->
+<ul id="textHighlightColorDropDown" class="dropDownMenu">
+	<li id="mnuItemTextHighlightColorAutomatic" style="border-bottom: 1px solid lightgray">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnTextHighlightColorAutomatic">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/autobackcolor.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Automatic --></p>
+			</div>
+		</a>
+	</li>
+	<!-- Color picker is generated programmatically -->
+	<li id="mnuItemTextHighlightColorMoreColors" style="border-top: 1px solid lightgray">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/colordialog.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- More Colors… --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Text color menu -->
+<ul id="textColorDropDown" class="dropDownMenu">
+	<li id="mnuItemTextColorAutomatic" style="border-bottom: 1px solid lightgray">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnTextColorAutomatic">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/autoforecolor.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Automatic --></p>
+			</div>
+		</a>
+	</li>
+	<!-- Color picker is generated programmatically -->
+	<li id="mnuItemTextColorMoreColors" style="border-top: 1px solid lightgray">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/colordialog.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- More Colors… --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Borders dropdown menu -->
+<ul id="bordersDropDown" class="dropDownMenu">
+	<li id="mnuItemBorderLeft">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderLeft">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/borderleft.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Left --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderTop">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderTop">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/bordertop.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Top --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderRight">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderRight">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/borderright.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Right --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderBottom">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderBottom">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/borderbottom.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Bottom --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderOutside">
+		<a style="border-top: 1px solid lightgray">
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderOutside">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/borderbox.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Outside Borders --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderAll">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderAll">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/borderall.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- All Borders --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderInsideHor">
+		<a style="border-top: 1px solid lightgray">
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderInsideHor">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/borderinnerhor.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Inside horizontal Border --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBorderInsideVert">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBorderInsideVert">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/borderinnervert.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Inside vertical Border --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Bulleted list dropdown menu -->
+<ul id="bulletListDropDown" class="dropDownMenu">
+	<li id="mnuItemBulletListDisc">
+		<a>
+			<div class="ribbon-button ribbon-button-42px" id="tglBtnBulletListDisc">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/listdisc.png">
+			</div>
+			<div class="menu-item-caption-container-42px">
+				<p><!-- Disc --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBulletListDash">
+		<a>
+			<div class="ribbon-button ribbon-button-42px" id="tglBtnBulletListDash">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/listdash.png">
+			</div>
+			<div class="menu-item-caption-container-42px">
+				<p><!-- Dash --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBulletListAsterisk">
+		<a>
+			<div class="ribbon-button ribbon-button-42px" id="tglBtnBulletListAsterisk">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/listasterisk.png">
+			</div>
+			<div class="menu-item-caption-container-42px">
+				<p><!-- Asterisk --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBulletListDiamond">
+		<a>
+			<div class="ribbon-button ribbon-button-42px" id="tglBtnBulletListDiamond">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/listdiamond.png">
+			</div>
+			<div class="menu-item-caption-container-42px">
+				<p><!-- Diamond --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemBulletListArrow">
+		<a>
+			<div class="ribbon-button ribbon-button-42px" id="tglBtnBulletListArrow">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/listarrow.png">
+			</div>
+			<div class="menu-item-caption-container-42px">
+				<p><!-- Arrow --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemListFormatBullet">
+		<a style="border-top: 1px solid lightgray">
+			<div style="float: left; height: 16px; width: 16px; padding: 3px">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/listbullet.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Format List… --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Numbered list dropdown menu -->
+<ul id="numberedListDropDown" class="dropDownMenu">
+	<li id="mnuItemNumberedList_123">
+		<a>
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnNumberedList_123">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/list123.png">
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- 1, 2, 3, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemNumberedList_abc">
+		<a>
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnNumberedList_abc">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/listabc.png">
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- a, b, c, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemNumberedList_ABC">
+		<a>
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnNumberedList_ABC">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/listabccapital.png">
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- A, B, C, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemNumberedList_III">
+		<a>
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnNumberedList_III">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/listromancapital.png">
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- I, II, III, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemNumberedList_iii">
+		<a>
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnNumberedList_iii">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/listroman.png">
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- i, ii, iii, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFormatListNumbered">
+		<a style="border-top: 1px solid lightgray">
+			<div style="float: left; height: 16px; width: 16px; padding: 3px">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/listdialog.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Format List… --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Structured list dropdown menu -->
+<ul id="structuredListDropDown" class="dropDownMenu">
+	<li id="mnuItemStructuredList_123">
+		<a>
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnStructuredList_123">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/liststruct123.png">
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- 1, 2, 3, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemStructuredList_abc">
+		<a>
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnStructuredList_abc">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/liststructabc.png">
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- a, b, c, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemStructuredList_ABC">
+		<a>
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnStructuredList_ABC">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/liststructabccapital.png">
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- A, B, C, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemStructuredList_III">
+		<a>
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnStructuredList_III">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/liststructromancapital.png">
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- I, II, III, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemStructuredList_iii">
+		<a>
+			<div class="ribbon-button ribbon-button-numbered-list" id="tglBtnStructuredList_iii">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/liststructroman.png">
+			</div>
+			<div class="menu-item-caption-container-numbered-list">
+				<p><!-- i, ii, iii, … --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFormatListStructured">
+		<a style="border-top: 1px solid lightgray">
+			<div style="float: left; height: 16px; width: 16px; padding: 3px">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/liststructured.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Format List… --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Line spacing dropdown menu -->
+<ul id="lineSpacingDropDown" class="dropDownMenu">
+	<li id="mnuItemLineSpacing_1_0">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_1_0">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/checkmark.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 1.0 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLineSpacing_1_15">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_1_15">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/checkmark.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 1.15 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLineSpacing_1_5">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_1_5">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/checkmark.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 1.5 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLineSpacing_2_0">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_2_0">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/checkmark.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 2.0 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLineSpacing_2_5">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_2_5">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/checkmark.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 2.5 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemLineSpacing_3_0">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny ribbon-button-checkmark" id="tglBtnLineSpacing_3_0">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/checkmark.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 3.0 --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Background color menu -->
+<ul id="backColorDropDown" class="dropDownMenu">
+	<li id="mnuItemBackColorAutomatic" style="border-bottom: 1px solid lightgray">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnBackColorAutomatic">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/autobackcolor.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Automatic --></p>
+			</div>
+		</a>
+	</li>
+	<!-- Color picker is generated programmatically -->
+	<li id="mnuItemBackColorMoreColors" style="border-top: 1px solid lightgray">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/colordialog.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- More Colors… --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Frame color menu -->
+<ul id="frameColorDropDown" class="dropDownMenu">
+	<li id="mnuItemFrameColorAutomatic" style="border-bottom: 1px solid lightgray">
+		<a>
+			<div class="ribbon-button ribbon-button-tiny" id="tglBtnFrameColorAutomatic">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/autoforecolor.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- Automatic --></p>
+			</div>
+		</a>
+	</li>
+	<!-- Color picker is generated programmatically -->
+	<li id="mnuItemFrameColorMoreColors" style="border-top: 1px solid lightgray">
+		<a>
+			<div class="small-menu-item-image-wrapper">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" alt="Menu Item Image" data-orig-src="Icons/small_32bit/colordialog.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- More Colors… --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Frame Line width dropdown menu -->
+<ul id="frameLineWidthDropDown" class="dropDownMenu">
+	<li id="mnuItemFrameLineWidth_0_25">
+		<a>
+			<div class="small-menu-item-image-wrapper" id="tglBtnFrameLineWidth_0_25">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/shapeoutlineweight025.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 0.25 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFrameLineWidth_0_5">
+		<a>
+			<div class="small-menu-item-image-wrapper" id="tglBtnFrameLineWidth_0_5">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/shapeoutlineweight050.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 0.5 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFrameLineWidth_0_75">
+		<a>
+			<div class="small-menu-item-image-wrapper" id="tglBtnFrameLineWidth_0_75">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/shapeoutlineweight075.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 0.75 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFrameLineWidth_1_0">
+		<a>
+			<div class="small-menu-item-image-wrapper" id="tglBtnFrameLineWidth_1_0">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/shapeoutlineweight100.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 1.0 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFrameLineWidth_1_5">
+		<a>
+			<div class="small-menu-item-image-wrapper" id="tglBtnFrameLineWidth_1_5">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/shapeoutlineweight150.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 1.5 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFrameLineWidth_2_25">
+		<a>
+			<div class="small-menu-item-image-wrapper" id="tglBtnFrameLineWidth_2_25">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/shapeoutlineweight225.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 2.25 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFrameLineWidth_3_0">
+		<a>
+			<div class="small-menu-item-image-wrapper" id="tglBtnFrameLineWidth_3_0">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/shapeoutlineweight300.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 3.0 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFrameLineWidth_4_5">
+		<a>
+			<div class="small-menu-item-image-wrapper" id="tglBtnFrameLineWidth_4_5">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/shapeoutlineweight450.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 4.5 --></p>
+			</div>
+		</a>
+	</li>
+	<li id="mnuItemFrameLineWidth_6_0">
+		<a>
+			<div class="small-menu-item-image-wrapper" id="tglBtnFrameLineWidth_6_0">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/small_32bit/shapeoutlineweight600.png">
+			</div>
+			<div class="small-menu-item-caption-container">
+				<p><!-- 6.0 --></p>
+			</div>
+		</a>
+	</li>
+</ul>
+
+<!-- Style names drop down menu -->
+<ul id="stylesDropDown" class="dropDownMenu" style="width: 190px">
+	<!-- Formatting style names are added and removed in js -->
+	<!-- "Manage Styles" menu item -->
+	<li id="mnuItemManageStyles">
+		<a style="border-top: 1px solid lightgray; overflow-x: hidden">
+			<div class="large-menu-item-image-container-long-caption">
+				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNgYAAAAAMAASsJTYQAAAAASUVORK5CYII=" data-orig-src="Icons/large_32bit/styledialog.png">
+			</div>
+			<div class="large-menu-item-long-caption-container">
+				<h1><!-- Manage Styles --></h1>
+				<p><!-- Manage and edit the<br />document's styles. --></p>
+			</div>
+		</a>
+	</li>
+</ul>

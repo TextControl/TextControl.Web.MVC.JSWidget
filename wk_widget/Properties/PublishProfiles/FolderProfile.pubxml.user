@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\bjoer_000\Desktop\widget</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>09/16/2014 11:17:48</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.pdb">
+      <publishTime>09/16/2014 11:17:48</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/05/2017 09:59:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/05/2012 10:08:46</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/27/2016 14:50:24</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 03:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 03:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 03:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 03:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 03:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 03:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>01/28/2015 03:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>01/28/2015 03:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>01/28/2015 03:04:30</publishTime>
+    </File>
+    <File Include="bin/TXTextControl.Web.MVC.dll">
+      <publishTime>03/01/2018 17:31:08</publishTime>
+    </File>
+    <File Include="bin/wk_widget.dll">
+      <publishTime>03/01/2018 17:48:31</publishTime>
+    </File>
+    <File Include="bin/wk_widget.pdb">
+      <publishTime>03/01/2018 17:48:31</publishTime>
+    </File>
+    <File Include="Content/editor.css">
+      <publishTime>02/28/2018 20:56:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>02/01/2018 15:01:27</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>02/01/2018 15:01:27</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>02/01/2018 15:01:27</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>02/01/2018 15:01:27</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/01/2018 11:53:41</publishTime>
+    </File>
+    <File Include="Scripts/txtextcontrol.web-min.js">
+      <publishTime>03/06/2018 21:04:57</publishTime>
+    </File>
+    <File Include="Scripts/txtextcontrol.web.js">
+      <publishTime>03/06/2018 21:04:36</publishTime>
+    </File>
+    <File Include="Scripts/txtextcontrol.web.server-min.js">
+      <publishTime>03/06/2018 21:05:17</publishTime>
+    </File>
+    <File Include="Scripts/txtextcontrol.web.server.js">
+      <publishTime>02/28/2018 16:51:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/animated-overlay.gif">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-icons_222222_256x240.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-icons_454545_256x240.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-icons_888888_256x240.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/images/ui-icons_ffffff_256x240.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/jquery-ui.css">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/CSS/main.css">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/cursors/Markline.cur">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/cursors/tablecol.cur">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/ClientPasteDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/EdgePrintDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/FontDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/HyperlinkDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/InputBoxDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/LoadDictionaryDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/LoadThesaurusDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/MailMerge/CreateDataRelationDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/MailMerge/DateFieldDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/MailMerge/EditDataRelationsDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/MailMerge/EditMergeBlocksDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/MailMerge/IfFieldDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/MailMerge/IncludeTextFieldDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/MailMerge/InsertMergeBlockDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/MailMerge/MaxPreviewRowsDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/MailMerge/MergeFieldDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/MailMerge/SetChartDataRelationDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/OpenFileDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/OptionsDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/PermissionsAddUserDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/SaveDocumentAsDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/SpellCheckDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/ThesaurusDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/TxDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Dialogs/WaitDialog.html">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodeazteccode.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodecodabar.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodecode11.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodecode128.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodecode39.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodecode93.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodedatamatrix.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodeean13.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodeean8.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodefourstate.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodeintelligentmail.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodeinterleaved2of5.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodemaxicode.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodemicropdf.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodepdf417.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodeplanet.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodepostnet.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodeqrcode.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcoderoyalmail.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Barcode/barcodeupca.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartaxes.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartaxeslefttoright.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartaxesrighttoleft.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartaxeswithoutlabeling.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartaxistitle.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartaxistitlehor.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartaxistitlevert.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartdatalabels.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartdatatable.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartdatatablelegend.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/charteditdata.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartformat.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartgridlines.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartgridlinesmajorandminorhor.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartgridlinesmajorandminorvert.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartgridlinesmajorhor.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartgridlinesmajorvert.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartgridlinesminorhor.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartgridlinesminorvert.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartlegend.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartlegendbottom.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartlegendleft.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartlegendright.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartlegendtop.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartnoaxes.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartnoaxistitle.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartnodatalabels.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartnodatatable.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartnogridlines.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartnogridlinesvert.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartnolegend.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartnotitle.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/chartsetdatarelation.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/charttitlemain.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/Chart/charttitletop.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/chartgridlinesmajorhor.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/clientpaste.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/columnsdialog.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/deletebookmark.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/deletefooter.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/deleteheader.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/deletehyperlink.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/deletepagenumber.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/deletetable.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/deletetablecell.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/deletetablecol.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/deletetablerow.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/editbookmark.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/edithyperlink.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/footer.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/header.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/hyphenation.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/image.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/imageplaceholder.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/insertbookmark.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/insertchart.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/insertfile.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/inserthyperlink.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/insertpagecolumnbreak.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/insertpagenumber.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/insertsectionbreakpage.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/insertsectionbreakparagraph.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/insertshapes.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/insertsymbol.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/inserttablecolleft.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/inserttablecolright.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/inserttablerowabove.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/inserttablerowbelow.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/languagedetection.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/list123.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/listabc.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/listabccapital.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/listarrow.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/listasterisk.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/listdash.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/listdiamond.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/listdisc.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/listroman.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/listromancapital.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/liststruct123.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/liststructabc.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/liststructabccapital.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/liststructroman.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/liststructromancapital.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/loaddictionary.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergedatasource.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergedatasourceconfig.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergedatatable.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergedatefield.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergedeleteblock.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergedeletefield.png">
+      <publishTime>03/01/2018 17:43:05</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeeditblocks.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeeditdatarelations.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergefieldproperties.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergefinish.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergefirstrecord.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergehighlightblocks.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergehighlightfields.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeiffield.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeincludetextfield.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeinsertblock.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeinsertfield.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeintocurrentdoc.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeintoindivfiles.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeintosinglefile.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergelastrecord.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergenextfield.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergenextiffield.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergenextrecord.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergepreview.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergepreviousrecord.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeprint.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeshowfieldcodes.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mailmergeshowfieldtext.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mergetablecells.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/mousecursor.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/newpage.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/objectaligncenter.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/objectalignleft.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/objectalignright.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/objectbehindtext.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/objectdialog.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/objectiddialog.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/objectinfrontoftext.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/objectinlinewithtext.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/objectname.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/objecttopandbottom.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/open.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/opendemo.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/options.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pagebackgroundcolor.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pageborders.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pagebreak.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pagecolumnsone.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pagecolumnsthree.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pagecolumnstwo.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pagedialog.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pageframedialog.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pagenumberbottom.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pagenumbertop.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pageorientation.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pageorientationlandscape.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pageorientationportrait.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pagesize.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pageviewnormal.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/pageviewprint.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/paste.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/previewclose.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/print.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/proofingoptions.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/save.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/saveas.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/saveaspdf.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/selecttable.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/selecttablecell.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/selecttablecol.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/selecttablerow.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/setlanguage.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/shapefill.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/shapeoutline.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/shapestyles.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/showbookmarkmarkers.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/showtextframemarkerlines.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/spellasyoutype.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/spelling.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/splittable.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/splittableabove.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/splittablebelow.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/splittablecells.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/styledialog.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/styledialog.svg">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/table.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/tableborderbox.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/tabledialog.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/tablegridlines.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/test.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/textflow.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/textframe.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/textwrappingbreak.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/zoom.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/zoom100.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/zoompageheight.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/zoompagewidth.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/zorderbottom.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/zorderbottommost.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/zorderdown.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/zordertop.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/zordertopmost.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/large_32bit/zorderup.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/aligncenter.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/alignjustify.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/alignleft.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/alignright.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/anchor.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/autobackcolor.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/autoforecolor.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/barcodealignmentcenter.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/barcodealignmentleft.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/barcodealignmentright.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/barcodeqrcode.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/barcodevertalignmentbottom.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/barcodevertalignmentcenter.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/barcodevertalignmenttop.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/bookmarkmarkers.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/borderall.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/borderbottom.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/borderbox.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/borderinnerhor.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/borderinnervert.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/borderleft.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/borderright.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/bordertop.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellalignbottomcentered.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellalignbottomjustified.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellalignbottomleft.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellalignbottomright.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellalignmiddlecentered.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellalignmiddlejustified.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellalignmiddleleft.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellalignmiddleright.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellaligntopcentered.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellaligntopjustified.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellaligntopleft.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cellaligntopright.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/charactersettings.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chart.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartarea.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartauto.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartbar.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartcolumn.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartdatatable.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/charteditdata.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartformat.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartinclination.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartis3d.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartlabeledit.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartlegend.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartline.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartperspective.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartpie.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartrightangleaxes.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartrotation.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/chartsetdatarelation.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/charttitle.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/charttype.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/checkmark.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/colordialog.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/copy.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/cut.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/dialoglauncher.svg">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/dockingbottom.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/dockingleft.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/dockingright.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/dockingtop.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/drawing.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/drawingmarkerlines.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/find.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/fontbold.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/fontcolor.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/fontdialog.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/fontitalic.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/fontsizedecrease.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/fontsizeincrease.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/fontunderline.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/formattedtext.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/goto.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/highlightcolor.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/image.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/indentafter.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/indentbefore.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/indentdecrease.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/indentincrease.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/indentincrease.svg">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/indentright.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/insertchart.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/legendhorizontalalignment.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/legendverticalalignment.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/linedash.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/linedashdot.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/linedashdotdot.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/linedashtype.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/linedot.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/linesolid.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/linespacing.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/listbullet.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/listdialog.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/liststructured.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/mailmergedeletefield.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/mailmergefieldproperties.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/moresymbols.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/mousecursor.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/newpage.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectbehindtext.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectbringforward.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectbringinfrontoftext.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectbringtofront.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectheight.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectid.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectinlinewithtext.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectlayoutandposition.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectname.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectopacity.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectpositioncenter.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectpositionleft.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectpositionother.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectpositionright.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectproperties.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectsendbackward.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectsendbehindtext.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectsendtoback.png">
+      <publishTime>03/01/2018 17:43:04</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectsquare.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objecttopandbottom.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/objectwidth.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/open.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/pageborderall.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/pageborderbottom.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/pageborderleft.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/pageborderright.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/pagebordertop.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/pageorientationportrait.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/paradialog.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/paragraphbackcolor.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/paragraphsettings.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/paragraphsign.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/paste.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/print.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/redo.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/replace.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/save.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/selectall.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapefliphorizontally.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeflipvertically.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapenofill.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapenooutline.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlinemorelines.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlineweight.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlineweight025.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlineweight050.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlineweight075.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlineweight100.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlineweight150.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlineweight225.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlineweight300.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlineweight450.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shapeoutlineweight600.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shaperotate180.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shaperotateleft90.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/shaperotateright90.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/strikethrough.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/styledialog.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/styles.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/subscript.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/superscript.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/table.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/tablegridlines.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/tablelinecolor.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/tablelinewidth.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/tabs.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/textdirection.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/textdirltr.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/textdirrtl.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/textframe.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/textframemarkerlines.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/tx_icon16.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/undo.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/unformattedtext.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/xaxisalignment.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/xaxisinterval.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/xaxisline.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/xaxismajorgridlines.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/xaxismaximum.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/xaxisminimum.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/xaxisminorgridlines.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/xaxistitle.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/yaxisalignment.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/yaxisinterval.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/yaxisline.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/yaxismajorgridlines.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/yaxismaximum.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/yaxisminimum.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/yaxisminorgridlines.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/yaxistitle.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/zoom100percent.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/zoomfullpage.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/zoompageheight.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/zoompagewidth.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/small_32bit/zoomtotext.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/web/ajax_loader.gif">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/web/ribbon_show_hide_arrow_sprites.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Icons/web/scrollbar_arrow_sprites.png">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/JS/ThirdParty/jquery-1.10.2.min.js">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/JS/ThirdParty/jquery-ui-1.10.2.min.js">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/JS/ThirdParty/jquery.ui.touch-punch.min.js">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/JS/tx-min.js">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Ribbon/RibbonTabFrameFormatting.html">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Ribbon/RibbonTabHome.html">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Ribbon/RibbonTabInsert.html">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Ribbon/RibbonTabPageLayout.html">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Ribbon/RibbonTabReports.html">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Ribbon/RibbonTabTableLayout.html">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="TXTextControl.Web/Ribbon/RibbonTabView.html">
+      <publishTime>03/01/2018 17:43:03</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/28/2018 21:17:05</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>02/07/2018 17:37:24</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>02/01/2018 11:53:23</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>02/01/2018 15:01:20</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/01/2018 17:48:33</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

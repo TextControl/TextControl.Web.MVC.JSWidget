@@ -1,0 +1,221 @@
+<div id="optionsDialog" class="txDialog">
+	<style>
+		div#optionsDialog button {
+			min-width: 60px;
+			min-height: 22px;
+			margin: 0px 0px 7px 7px;
+			border-radius: 0px;
+			border: 1px solid #acacac;
+			background: #e5e5e5;
+			cursor: pointer;
+		}
+
+		#optionsDialog .column01 {
+			width: 140px;
+			text-align: right;
+			float: left;
+			clear: left;
+			margin-right: 5px;
+		}
+
+		#optionsDialog .column02 {
+			width: 250px;
+			float: left;
+			margin-right: 5px;
+		}
+
+		#optionsDialog button:hover {
+			border: 1px solid #7eb4ea;
+			background: #e3f0fc;
+		}
+	</style>
+	<div id="optionsDialogTabs">
+		<ul>
+			<li><a id="OPTIONS_DIALOG_TAB_HTML" href="#tabDlgOptsHTML"></a></li>
+			<li><a id="OPTIONS_DIALOG_TAB_PDF_SEC" href="#tabDlgOptsPDFSec"></a></li>
+			<li><a id="OPTIONS_DIALOG_TAB_PDF_EXP" href="#tabDlgOptsPDFExp"></a></li>
+			<li><a id="OPTIONS_DIALOG_TAB_PROOFING" href="#tabDlgOptsProofing"></a></li>
+			<li><a id="OPTIONS_DIALOG_TAB_SPELL_CHECK" href="#tabDlgOptsSpellCheck"></a></li>
+		</ul>
+		<div id="tabDlgOptsHTML">
+			<form>
+				<fieldset id="OPTIONS_DIALOG_GRP_STYLESH_SAV_OPTS">
+					<legend></legend>
+					<input id="rbCSSOptsNoStSh" type="radio" name="groupCSSOpts" style="float: left">
+					<label for="rbCSSOptsNoStSh" id="OPTIONS_DIALOG_LBL_CSS_OPTS_NO_STSH" style="float: left">
+					</label>
+					<input id="rbCSSOptsInlStSh" type="radio" name="groupCSSOpts" style="float: left; clear: left">
+					<label for="rbCSSOptsInlStSh" id="OPTIONS_DIALOG_LBL_CSS_OPTS_INL_STSH" style="float: left">
+					</label>
+				</fieldset>
+			</form>
+		</div>
+		<div id="tabDlgOptsPDFSec">
+			<form>
+				<fieldset id="OPTIONS_DIALOG_GRP_PDF_DIG_SIG">
+					<legend></legend>
+					<label id="OPTIONS_DIALOG_LBL_PDF_CERT_FILE" for="txtPDFCertFile" class="column01">
+					</label>
+					<input type="file" accept=".pfx" id="txtPDFCertFile" class="column02">
+					<label id="OPTIONS_DIALOG_LBL_PDF_CERT_PWD" for="txtPDFCertPwd" class="column01">
+					</label>
+					<input type="password" id="txtPDFCertPwd" class="column02">
+				</fieldset>
+				<fieldset id="OPTIONS_DIALOG_GRP_PDF_PWD">
+					<legend></legend>
+					<table>
+						<tr>
+							<td>
+								<input type="checkbox" id="chkUserPassword" style="float: left">
+							</td>
+							<td>
+								<label id="OPTIONS_DIALOG_LBL_PDF_REQ_PWD" for="chkUserPassword" style="float: left">
+								</label>
+							</td>
+						</tr>
+					</table>
+					<label id="OPTIONS_DIALOG_LBL_PDF_DOC_PWD" for="txtUserPassword" class="column01">
+					</label>
+					<input type="password" id="txtUserPassword" class="column02" disabled="disabled">
+				</fieldset>
+			</form>
+		</div>
+		<div id="tabDlgOptsPDFExp">
+			<form>
+				<fieldset id="OPTIONS_DIALOG_GRP_PDF_EXP_OPTS">
+					<legend></legend>
+					<table>
+						<tr>
+							<td>
+								<input id="chkEnPDFAExp" type="checkbox" style="float: left">
+							</td>
+							<td>
+								<label id="OPTIONS_DIALOG_CHK_EN_PDFA" for="chkEnPDFAExp" style="float: left">
+								</label>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+		</div>
+		<div id="tabDlgOptsProofing">
+			<form>
+				<fieldset id="OPTIONS_DIALOG_GRP_PROOF_OPTS">
+					<legend></legend>
+					<table>
+						<tr>
+							<td>
+								<input id="chkEnableSpellCheck" type="checkbox" style="float: left">
+							</td>
+							<td>
+								<label id="OPTIONS_DIALOG_LBL_PROOF_SPELL_CHECK" for="chkEnableSpellCheck" style="float: left">
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="chkEnableHyphenation" type="checkbox" style="float: left; clear: left">
+							</td>
+							<td>
+								<label id="OPTIONS_DIALOG_LBL_PROOF_HYPHEN" for="chkEnableHyphenation" style="float: left">
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="chkEnableLangDetect" type="checkbox" style="float: left; clear: left">
+							</td>
+							<td>
+								<label id="OPTIONS_DIALOG_LBL_PROOF_LANGDETECT" for="chkEnableLangDetect" style="float: left">
+								</label>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+		</div>
+		<div id="tabDlgOptsSpellCheck">
+			<form>
+				<table style="border-collapse: collapse">
+					<tr>
+						<td>
+							<input type="checkbox" id="chkIgnoreUpper">
+						</td>
+						<td>
+							<label id="LBL_IGNORE_UPPERCASE" for="chkIgnoreUpper">
+								Ignore words in UPPERCASE
+							</label>
+						</td>
+						<td>
+							<select id="selIgnoreUpper">
+								<option id="ITM_UPPERCASE_ALL">All
+								<option id="ITM_UPPERCASE_ONLY_CORRECT">Only correct words
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="chkIgnoreCntNums">
+						</td>
+						<td>
+							<label id="LBL_IGNORE_WORD_WITH_NUMBERS" for="chkIgnoreCntNums">
+								Ignore words that contain numbers
+							</label>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="chkIgnoreURLs">
+						</td>
+						<td>
+							<label id="LBL_IGNORE_INTERNET_ADDRESSES" for="chkIgnoreURLs">
+								Ignore internet addresses
+							</label>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="chkIgnoreEmails">
+						</td>
+						<td>
+							<label id="LBL_IGNORE_EMAIL_ADDRESSES" for="chkIgnoreEmails">
+								Ignore E-Mail addresses
+							</label>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="chkFlagRepeatedWords">
+						</td>
+						<td>
+							<label id="LBL_FLAG_REPEATED_WORDS" for="chkFlagRepeatedWords">
+								Flag repeated words
+							</label>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox" id="chkIgnoreUpperAndLower">
+						</td>
+						<td>
+							<label id="LBL_IGNORE_CASE" for="chkIgnoreUpperAndLower">
+								Ignore uppercase and lowercase
+							</label>
+						</td>
+						<td>
+							<select id="selIgnoreUpperLower">
+								<option id="ITM_CASE_ALL">All
+								<option id="ITM_CASE_WORD_BEGIN_ALWAYS">Only at word begin
+								<option id="ITM_CASE_WORD_BEGIN_IS_UPPER">Only when word begin is upper
+							</select>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</div>
