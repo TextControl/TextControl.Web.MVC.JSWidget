@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextControlJSWidget", "wk_widget\TextControlJSWidget.csproj", "{AD56EF32-F140-48BC-B9D1-67FAA10AD0F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextControlJSWidget", "widget\TextControlJSWidget.csproj", "{AD56EF32-F140-48BC-B9D1-67FAA10AD0F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
