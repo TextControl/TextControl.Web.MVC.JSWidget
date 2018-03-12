@@ -22,7 +22,7 @@ Replace the destination URL string with the URL where you are going to host this
 When this hosting project is running, you can integrate the widget simply by adding this JavaScript tag to the HEAD of your HTML:
  
 ```html
-<script src="https://labs.textcontrol.com/widget/scripts/txtextcontrol.web-min.js"></script>
+<script src="http://localhost:1303/widget/scripts/txtextcontrol.web-min.js"></script>
 ```
 Then create a container DIV somewhere in your HTML that will host the widget. The editor itself will automatically fill the complete container.
 ```html
