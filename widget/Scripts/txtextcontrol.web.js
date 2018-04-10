@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * TX Text Control Editor Widget 1.0 (http://www.textcontrol.com/)
  * Copyright 2018 Text Control GmbH
 */
@@ -509,10 +509,11 @@ var TXTextControlWeb = (function () {
 
         iframe.src = m_destinationUrl;
         iframe.setAttribute('allowFullScreen', 'true');
-        iframe.id = element.id + '_txframe';
+        iframe.id = element + '_txframe';
         iframe.style.border = 'none';
         iframe.style.width = '100%';
         iframe.style.height = '100%';
+
         document.getElementById(element).appendChild(iframe);
 
         var tx = {};
