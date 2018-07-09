@@ -1,4 +1,4 @@
-﻿/*!
+﻿/*
  * TX Text Control Editor Widget 1.0 Server Script (http://www.textcontrol.com/)
  * Copyright 2018 Text Control GmbH
 */
@@ -337,6 +337,21 @@ window.onload = function () {
             case "ribbon.show": {
                 document.getElementById("ribbonbar").style.display = "block";
                 break;
+            }
+            case "ribbon.showElement": {
+                if (message.parameters != null) {
+
+                    var ribbonElement = document.getElementById(message.parameters[0]);
+
+                    if (message.parameters[1] == false) {
+                        ribbonElement.style.display = "none";
+                    }
+                    else {
+                        ribbonElement.style.display = "inline-block";
+                    }
+
+                    break;
+                }
             }
             case "ribbonPermissionsTab.setAllowAdditionalUserNames": {
                 if (message.parameters != null)

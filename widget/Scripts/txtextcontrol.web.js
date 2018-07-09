@@ -1,4 +1,4 @@
-﻿/*!
+﻿/*
  * TX Text Control Editor Widget 1.0 (http://www.textcontrol.com/)
  * Copyright 2018 Text Control GmbH
 */
@@ -466,25 +466,25 @@ var TXTextControl = (function () {
         IncludeTextField: 2,
         DateField: 3,
         NextField: 4,
-        NextIfField: 5,
+        NextIfField: 5
     };
 
     tx.ClipboardMode = {
         Client: 1,
-        Server: 2,
+        Server: 2
     };
 
     tx.SpecialZoomFactor = {
         PageWidth: -1,
         WholePage: -2,
-        TextWidth: -3,
+        TextWidth: -3
     }
 
     tx.HorizontalAlignment = {
         Left: 1,
         Right: 2,
         Center: 3,
-        Justify: 4,
+        Justify: 4
     }
 
     tx.MergeFieldTextFormat = {
@@ -492,7 +492,7 @@ var TXTextControl = (function () {
         Uppercase: 1,
         Lowercase: 2,
         FirstCapital: 3,
-        TitleCase: 4,
+        TitleCase: 4
     }
 
     return tx;
@@ -503,16 +503,17 @@ var TXTextControlWeb = (function () {
     function TXTextControlWeb(element) {
 
         // change the source here
-        var m_destinationUrl = "http://localhost:1303/";
+        var m_destinationUrl = "https://labs.textcontrol.com/widget/";
 
         var iframe = document.createElement('iframe');
 
         iframe.src = m_destinationUrl;
         iframe.setAttribute('allowFullScreen', 'true');
-        iframe.id = element.id + '_txframe';
+        iframe.id = element + '_txframe';
         iframe.style.border = 'none';
         iframe.style.width = '100%';
         iframe.style.height = '100%';
+
         document.getElementById(element).appendChild(iframe);
 
         var tx = {};
@@ -558,7 +559,7 @@ var TXTextControlWeb = (function () {
                                     message.data[index].editable,
                                     message.data[index].showActivated,
                                     message.data[index].isSpellCheckingEnabled,
-                                    message.data[index].storedId,
+                                    message.data[index].storedId
                                 );
 
                                 fields.push(newField);
@@ -582,7 +583,7 @@ var TXTextControlWeb = (function () {
                                     message.data[index].start,
                                     message.data[index].length,
                                     message.data[index].nestedLevel,
-                                    message.data[index].storedId,
+                                    message.data[index].storedId
                                 );
 
                                 subTextParts.push(newSubTextPart);
@@ -600,7 +601,7 @@ var TXTextControlWeb = (function () {
                                     message.data[index].type,
                                     message.data[index].index,
                                     message.data[index].selection,
-                                    message.data[index].storedId,
+                                    message.data[index].storedId
                                 );
 
                                 textParts.push(newTextPart);
@@ -1077,6 +1078,15 @@ var TXTextControlWeb = (function () {
                 var message = new Object();
                 message.receiver = "txtextcontrol";
                 message.method = "ribbon.show";
+
+                SendMessage(message);
+            },
+
+            showElement: function (element, show) {
+                var message = new Object();
+                message.receiver = "txtextcontrol";
+                message.method = "ribbon.showElement";
+                message.parameters = [element, show];
 
                 SendMessage(message);
             },
@@ -1855,7 +1865,6 @@ var TXTextControlWeb = (function () {
         }
 
         function SendMessage(message) {
-            //var receiver = document.getElementById('txtextcontrolWeb').contentWindow;
             var receiver = iframe.contentWindow;
             var message = JSON.stringify(message);
 
