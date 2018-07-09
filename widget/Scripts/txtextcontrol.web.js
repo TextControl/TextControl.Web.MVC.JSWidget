@@ -1,4 +1,4 @@
-﻿/*
+/*
  * TX Text Control Editor Widget 1.0 (http://www.textcontrol.com/)
  * Copyright 2018 Text Control GmbH
 */
