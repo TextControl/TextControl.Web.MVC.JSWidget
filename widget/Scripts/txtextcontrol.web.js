@@ -500,7 +500,7 @@ var TXTextControl = (function () {
 
 var TXTextControlWeb = (function () {
 
-    function TXTextControlWeb(element) {
+    function TXTextControlWeb(element, key) {
 
         // change the source here
         var m_destinationUrl = "https://labs.textcontrol.com/widget/";
@@ -517,8 +517,21 @@ var TXTextControlWeb = (function () {
         document.getElementById(element).appendChild(iframe);
 
         var tx = {};
-        var event = new Event('textControlWebLoaded');
-        
+        //var event = new Event('textControlWebLoaded');
+
+        var event;
+
+        createNewEvent('textControlWebLoaded');
+
+        function createNewEvent(eventName) {
+            if (typeof (Event) === 'function') {
+                event = new Event(eventName);
+            } else {
+                event = document.createEvent('Event');
+                event.initEvent(eventName, true, true);
+            }
+        }
+
         function receiveMessage(e) {
 
             var message = JSON.parse(e.data);
