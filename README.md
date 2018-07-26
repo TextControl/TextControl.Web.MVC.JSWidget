@@ -12,6 +12,7 @@ Essentially, the widget lives in an IFRAME which  runs this ASP.NET MVC project.
 
 ## Setup
 In order to host this widget on your own servers, follow these steps:
+ - Download and Install TX Text Control .NET Server for ASP.NET (trial sufficient)
  - Download this project and host it on an IIS server.
  - Open the file *widget/Scripts/**txtextcontrol.web.js*** and search for this variable:
 
