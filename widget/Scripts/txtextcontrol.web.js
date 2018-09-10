@@ -503,7 +503,7 @@ var TXTextControlWeb = (function () {
     function TXTextControlWeb(element, key) {
 
         // change the source here
-        var m_destinationUrl = "https://labs.textcontrol.com/widget/";
+        var m_destinationUrl = "http://localhost:1303/";
 
         var iframe = document.createElement('iframe');
 
@@ -517,8 +517,6 @@ var TXTextControlWeb = (function () {
         document.getElementById(element).appendChild(iframe);
 
         var tx = {};
-        //var event = new Event('textControlWebLoaded');
-
         var event;
 
         createNewEvent('textControlWebLoaded');
