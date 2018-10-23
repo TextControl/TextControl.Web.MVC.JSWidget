@@ -479,6 +479,17 @@ window.onload = function () {
                 SendMessage(returnMessage);
                 break;
             }
+            case "getTextViewElement": {
+                var returnMessage = new Object();
+                returnMessage.receiver = "txtextcontrol-client";
+                returnMessage.callbackGuid = message.callbackGuid;
+                returnMessage.removeCallback = true;
+
+                returnMessage.data = { height: document.getElementById("mainCanvas").clientHeight, width: document.getElementById("mainCanvas").clientWidth, offsetLeft: document.getElementById("mainCanvas").offsetLeft, offsetTop: document.getElementById("mainCanvas").offsetTop };
+
+                SendMessage(returnMessage);
+                break;
+            }
             case "addMergeField": {
                 if (message.parameters != null) {
                     var mergeField = new TXTextControl.MergeField();

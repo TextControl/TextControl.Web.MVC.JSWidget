@@ -32,7 +32,7 @@ var TXTextControl = (function () {
 
         return SelectionBounds;
     })(); // Class SelectionBounds
-
+    
     // Class TextField
     tx.TextField = (function () {
 
@@ -621,7 +621,6 @@ var TXTextControlWeb = (function () {
                             callbackData = textParts;
                             break;
                         }
-
                     }
                 }
 
@@ -1311,6 +1310,17 @@ var TXTextControlWeb = (function () {
             var message = new Object();
             message.receiver = "txtextcontrol";
             message.method = "getZoomFactor";
+            message.callbackGuid = uuidv4();
+
+            m_messageQueue[message.callbackGuid] = callback;
+
+            SendMessage(message);
+        };
+
+        tx.getTextViewElement = function (callback) {
+            var message = new Object();
+            message.receiver = "txtextcontrol";
+            message.method = "getTextViewElement";
             message.callbackGuid = uuidv4();
 
             m_messageQueue[message.callbackGuid] = callback;
