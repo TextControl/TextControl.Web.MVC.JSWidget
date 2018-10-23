@@ -549,7 +549,7 @@ var TXTextControlWeb = (function () {
                 if (message.object != null) {
                     switch (message.object) {
                         case "TextField": {
-
+                            
                             var fields = [];
 
                             for (index = 0; index < message.data.length; ++index) {
@@ -649,7 +649,7 @@ var TXTextControlWeb = (function () {
                 parameters,
                 typeName,
                 start,
-                lenght,
+                length,
                 id,
                 type,
                 bounds,
