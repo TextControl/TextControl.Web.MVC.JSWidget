@@ -620,7 +620,7 @@ window.onload = function () {
 
                     returnMessage.data = e;
                     SendMessage(returnMessage);
-                }, message.parameters[1]);
+                }, message.parameters[0]);
                 break;
             }
             case "getTextParts": {
