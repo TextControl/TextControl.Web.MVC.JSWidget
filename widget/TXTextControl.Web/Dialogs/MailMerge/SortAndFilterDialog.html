@@ -1,0 +1,99 @@
+<style type="text/css">
+    fieldset:hover {
+        border: 2px solid #C5D8E1;
+    }
+
+    fieldset {
+        border: 1px solid #cacaca;
+    }
+
+    /* Style the table */
+
+    table {
+        border-collapse: collapse;
+    }
+
+    tbody tr:hover {
+        border: 2px solid #C5D8E1;
+    }
+
+    /* Style the tab */
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+                background-color: #ccc;
+            }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    tr th {
+        text-align: left;
+        font-weight: normal;
+    }
+
+    button::after button {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    select:disabled {
+        opacity: 0.5;
+    }
+
+    input:disabled {
+        background-color: lightgrey;
+        opacity: 0.5;
+    }
+
+    div.footer {
+        padding: 5px;
+    }
+</style>
+
+<div id="sortAndFilterDialog" class="txDialog">
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Filter')">Filter</button>
+        <button class="tablinks" onclick="openTab(event, 'Sort')">Sort</button>
+    </div>
+
+
+    <div id="Filter" class="tabcontent">
+    </div>
+
+    <div class="txui-tabs-panel txui-widget-content txui-corner-bottom">
+        <div id="Sort" class="tabcontent">
+
+        </div>
+    </div>
+ </div>

@@ -1,0 +1,38 @@
+<style>
+    #messageBoxDialog {
+        width: 200px;
+    }
+
+    #messageBoxDialog > div{
+        position:relative;
+        display:inline-block;
+        vertical-align:middle;
+    }
+
+    .ui-icon{
+        margin-right: 20px;
+        font-size:xx-large;
+        text-shadow: 3px 2px lightgray;
+    }
+
+    .ui-icon.ui-icon-info {
+            color:blue;
+        }
+
+    #msgBoxDlg_Text{
+        /*display:inline-block;*/
+    }
+
+    /* Center Message Box Buttons*/
+    #messageBoxDialog + div .txui-dialog-buttonset {
+         float: none !important;
+         text-align: center;
+    }
+
+
+</style>
+<div id="messageBoxDialog" class="txDialog" style="overflow:hidden;">
+    <div id="msgBoxDlg_Icon" class="ui-icon ui-icon-info">&#x1F6C8;</div><div id="msgBoxDlg_Text">Message</div>
+</div>
+
+<!---->

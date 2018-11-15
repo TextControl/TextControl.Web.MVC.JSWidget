@@ -44,8 +44,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="HtmlAgilityPack, Version=1.8.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.8.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -68,8 +68,8 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="TXTextControl.Web.MVC, Version=25.0.500.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
-      <HintPath>..\packages\TXTextControl.Web.25.0.501.500\lib\net45\TXTextControl.Web.MVC.dll</HintPath>
+    <Reference Include="TXTextControl.Web.MVC, Version=26.0.600.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <HintPath>..\packages\TXTextControl.Web.26.0.600.500\lib\net45\TXTextControl.Web.MVC.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +148,8 @@
     <Content Include="TXTextControl.Web\Dialogs\MailMerge\MaxPreviewRowsDialog.html" />
     <Content Include="TXTextControl.Web\Dialogs\MailMerge\MergeFieldDialog.html" />
     <Content Include="TXTextControl.Web\Dialogs\MailMerge\SetChartDataRelationDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MailMerge\SortAndFilterDialog.html" />
+    <Content Include="TXTextControl.Web\Dialogs\MessageBoxDialog.html" />
     <Content Include="TXTextControl.Web\Dialogs\OpenFileDialog.html" />
     <Content Include="TXTextControl.Web\Dialogs\OptionsDialog.html" />
     <Content Include="TXTextControl.Web\Dialogs\PermissionsAddUserDialog.html" />
@@ -223,6 +225,7 @@
     <Content Include="TXTextControl.Web\Icons\large_32bit\deletetablecell.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\deletetablecol.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\deletetablerow.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\draft.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\editbookmark.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\edithyperlink.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\footer.png" />
@@ -261,6 +264,7 @@
     <Content Include="TXTextControl.Web\Icons\large_32bit\liststructroman.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\liststructromancapital.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\loaddictionary.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\localimage.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergedatasource.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergedatasourceconfig.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\mailmergedatatable.png" />
@@ -325,6 +329,7 @@
     <Content Include="TXTextControl.Web\Icons\large_32bit\paste.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\previewclose.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\print.png" />
+    <Content Include="TXTextControl.Web\Icons\large_32bit\printlayout.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\proofingoptions.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\save.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\saveas.png" />
@@ -365,6 +370,7 @@
     <Content Include="TXTextControl.Web\Icons\large_32bit\zordertop.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\zordertopmost.png" />
     <Content Include="TXTextControl.Web\Icons\large_32bit\zorderup.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\accept.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\aligncenter.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\alignjustify.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\alignleft.png" />
@@ -400,6 +406,8 @@
     <Content Include="TXTextControl.Web\Icons\small_32bit\cellaligntopjustified.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\cellaligntopleft.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\cellaligntopright.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellformatnumber.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\cellformattext.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\charactersettings.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\chart.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\chartarea.png" />
@@ -422,16 +430,20 @@
     <Content Include="TXTextControl.Web\Icons\small_32bit\charttitle.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\charttype.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\checkmark.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\close.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\colordialog.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\copy.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\cut.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\delete.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\dialoglauncher.svg" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\disableFormulaCalculation.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\dockingbottom.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\dockingleft.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\dockingright.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\dockingtop.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\drawing.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\drawingmarkerlines.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\enableFormulaCalculation.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\find.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\fontbold.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\fontcolor.png" />
@@ -441,6 +453,7 @@
     <Content Include="TXTextControl.Web\Icons\small_32bit\fontsizeincrease.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\fontunderline.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\formattedtext.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\formula.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\goto.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\highlightcolor.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\image.png" />
@@ -503,6 +516,7 @@
     <Content Include="TXTextControl.Web\Icons\small_32bit\paste.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\print.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\redo.png" />
+    <Content Include="TXTextControl.Web\Icons\small_32bit\refresh.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\replace.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\save.png" />
     <Content Include="TXTextControl.Web\Icons\small_32bit\selectall.png" />
@@ -576,7 +590,6 @@
     <Content Include="TXTextControl.Web\Ribbon\RibbonTabPageLayout.html" />
     <Content Include="TXTextControl.Web\Ribbon\RibbonTabReports.html" />
     <Content Include="TXTextControl.Web\Ribbon\RibbonTabTableLayout.html" />
-    <Content Include="TXTextControl.Web\Ribbon\RibbonTabView.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
