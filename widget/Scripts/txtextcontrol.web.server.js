@@ -41,13 +41,13 @@ window.onload = function () {
 
         switch (message.method) {
             case "loadDocument": {
-                var encoded = btoa(message.parameters[1]);
-                TXTextControl.loadDocument(message.parameters[0], encoded);
+                //var encoded = btoa(message.parameters[1]);
+                TXTextControl.loadDocument(message.parameters[0], message.parameters[1]);
                 break;
             }
             case "loadSelection": {
-                var encoded = btoa(message.parameters[1]);
-                TXTextControl.loadSelection(message.parameters[0], encoded);
+                //var encoded = btoa(message.parameters[1]);
+                TXTextControl.loadSelection(message.parameters[0], message.parameters[1]);
                 break;
             }
             case "loadXMLDatabase": {
