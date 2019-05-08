@@ -50,6 +50,6 @@ The widget has (nearly) the same [JavaScript API](https://www.textcontrol.com/do
 function loadDocument()
 {
 	textControl1.loadDocument(
-	TXTextControl.StreamType.HTMLFormat, '<strong>This is a test</strong>');
+	TXTextControl.StreamType.HTMLFormat, btoa("<strong>This is a test</strong>"));
 }
 ```
