@@ -1,4 +1,4 @@
-﻿#txTemplateDesignerContainer {
+#txTemplateDesignerContainer {
 	font-family: Arial, Helvetica, sans-serif;
 	color: #5E5E5E !important;
 	background-color: #F0F0F0;
@@ -294,6 +294,11 @@
 	margin-right: 3px;
 }
 
+#txTemplateDesignerContainer div.large-ribbon-button-container {
+	display: inline-block; 
+	float: left; 
+}
+
 #txTemplateDesignerContainer img.ribbon-button-big-image {
 	display: block;
 	margin: auto;
@@ -449,7 +454,7 @@
 	float: left;
 }
 
-#txTemplateDesignerContainer div.ribbon-group-button-group {
+#txTemplateDesignerContainer div.ribbon-group-control-group {
 	float: left;
 	border-right: 1px solid;
 	border-color: #bbbbbb;
@@ -457,11 +462,11 @@
 	padding-right: 5px;
 }
 
-#txTemplateDesignerContainer div.ribbon-group-button-group:first-child {
+#txTemplateDesignerContainer div.ribbon-group-control-group:first-child {
 	padding-left: 0px;
 }
 
-#txTemplateDesignerContainer div.ribbon-group-button-group:last-child {
+#txTemplateDesignerContainer div.ribbon-group-control-group:last-child {
 	border-right: none;
 	padding-right: 0px;
 }
@@ -489,7 +494,7 @@
 }
 
 /* Symbol menu special treatment */
-#insertSymbolDropDown li.txui-menu-item {
+li.txui-menu-item.menu-item-symbol {
 	height: auto;
 }
 
@@ -510,6 +515,15 @@
 	width: 100%;
 	border-radius: 0px;
 	overflow: hidden;
+}
+
+/* Place Carat Icon vertically centered */
+#txTemplateDesignerContainer ul.txui-menu > li.txui-menu-item-small > a > span.txui-menu-icon{
+	margin-top: 2px;
+}
+
+#txTemplateDesignerContainer ul.txui-menu > li.txui-menu-item-large > a > span.txui-menu-icon{
+	margin-top: 12px;
 }
 
 /* Hovered anchor tags in jquery menu items */
@@ -534,21 +548,18 @@
 #txTemplateDesignerContainer .txui-menu div.large-menu-item-image-container {
 	float: left;
 	overflow: hidden;
-	width: 32px;
-	height: 32px;
-	margin-top: 3px;
+	margin-top: 2px;
 	margin-right: 4px;
-	margin-left: 3px;
+	margin-left: 0px;
+    padding: 3px;
 }
 
 #txTemplateDesignerContainer .txui-menu div.large-menu-item-image-container-long-caption {
 	float: left;
 	overflow: hidden;
-	width: 32px;
-	height: 32px;
 	margin-top: 8px;
 	margin-right: 4px;
-	margin-left: 3px;
+	margin-left: 5px;
 }
 
 #txTemplateDesignerContainer .txui-menu div.menu-item-caption-container-42px {
@@ -575,7 +586,7 @@
 }
 
 #txTemplateDesignerContainer .txui-menu div.large-menu-item-caption-container p {
-	margin: 11px 0px; /* Bootstrap override */
+	margin: 13px 0px 0px 0px; /* Bootstrap override */
 }
 
 #txTemplateDesignerContainer .txui-menu div.large-menu-item-long-caption-container {
@@ -794,6 +805,11 @@
 	cursor: text;
 }
 
+#txTemplateDesignerContainer div.txScrollbarContainer {
+	position: absolute; 
+	transition: opacity 1s; 
+}
+
 #txTemplateDesignerContainer .sidebar {
 	z-index: 5;
 	display: none;
@@ -912,17 +928,18 @@
 	cursor: default;
 }
 
-#txTemplateDesignerContainer #insertSymbolDropDown li {
+#txTemplateDesignerContainer ul.txui-menu li.menu-item-symbol {
 	float: left;
 	width: 26px;
 }
 
-#txTemplateDesignerContainer #insertSymbolDropDown li.txui-menu-item a {
+#txTemplateDesignerContainer ul.txui-menu li.txui-menu-item.menu-item-symbol a {
 	font-size: 12pt;
 	height: 26px;
 	width: 26px;
 	padding-top: 1px;
 	text-align: center;
+    clear:right;
 }
 
 #txTemplateDesignerContainer div.menu-item-category-header {
@@ -1144,7 +1161,7 @@
 #scroll-button-arrow-img {
 	/*position:center;*/
 	display: inline-block;
-	background-image: url(../Icons/web/scrollbar_arrow_sprites.png);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAHBAMAAABkX3erAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAA9QTFRFAAAA////AAAAYGBg////KDV7UAAAAAJ0Uk5TAAB2k804AAAAlUlEQVQY0zWQ0YkFMQwDB9sFGK6BrCvwogay4P5reh/J6U8gBjGoSdTpOHgtoFYaBjYbmJ1BQOAiXaD2RlZgBbVsUTEQA7NjM6BONS65XNSiFlZlZcVsZhMzMTHg+hOo9UqN1YHWU7U4i9nzzex/qvB2camFLSsudYh9oKSLN2le7tcnWTzcr1+y+eAa4OQauO0auO0H3hkae9g+mQAAAAAASUVORK5CYII=);
 	background-repeat: no-repeat;
 	overflow: hidden;
 	pointer-events: none;
@@ -1168,7 +1185,7 @@
 
 #txTemplateDesignerContainer div.scroll-button-arrow-wrapper {
 	position: relative;
-	background-image: url(../Icons/web/scrollbar_arrow_sprites.png);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAHBAMAAABkX3erAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAA9QTFRFAAAA////AAAAYGBg////KDV7UAAAAAJ0Uk5TAAB2k804AAAAlUlEQVQY0zWQ0YkFMQwDB9sFGK6BrCvwogay4P5reh/J6U8gBjGoSdTpOHgtoFYaBjYbmJ1BQOAiXaD2RlZgBbVsUTEQA7NjM6BONS65XNSiFlZlZcVsZhMzMTHg+hOo9UqN1YHWU7U4i9nzzex/qvB2camFLSsudYh9oKSLN2le7tcnWTzcr1+y+eAa4OQauO0auO0H3hkae9g+mQAAAAAASUVORK5CYII=);
 	background-repeat: no-repeat;
 	overflow: hidden;
 	pointer-events: none;
@@ -1277,7 +1294,7 @@ div.txui-dialog-titlebar button.txui-dialog-titlebar-close:hover {
 }
 
 div.txui-dialog-titlebar button.txui-dialog-titlebar-close span.txui-icon {
-	background-image: url(images/ui-icons_ffffff_256x240.png);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAADwCAMAAADYSUr5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAQ5QTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7ilbVgAAAFl0Uk5TAAECAwQGCAoNEBMWGRocHh8gISIjJCcpLC8xMjM0ODw/QEJFR0hKS1BRU1VaYGJjZmhqbW9xfH+AgoWHjI+RlJmcnqCipaiqq62vsrW4vL6/w8bIzM/f7/0YiMXlAAAO7klEQVR42u1dC2PbthFG2kwzHTip69YtVSYr82jUpZrVdV7drJkTteu2rNvkTV56//+PDCBF4u7wEi2Zki188usIPnAfD8DdAaSFSEhI2AJIkDuuP2w5AytXT0JYf4kZ0Dv3SwizQNCgBPD6kHJdKvEWAFvFwAXY8dWfvZoEt0CbAMnrQ8r5HbQI4IfbF7B2lj0yYNXfrUKg3GZQBA0IQg1isbMM7rTeBs4t2K4iv8G2hQTvsG0BgQr0bwFuUgK3MGjBzh2sPiBkgv33AZseBXgT6n8USI5QQkJCQkJCQsLGPMEN+0HSitaAO+8yoBAAD/Blp3yAlRBSZ++VEkcFLAKsHfjuNFyU1gU4ATIYPPYaDFn1d9c4UOzIqMjA4SKSAoSKAOivgYMzBeSvsVwmHyCDfMbSB5sPhyVcZz5AxprgtoXDt30USEhISEhISEjYoKe1ujO/0vlhswrYoU9QoSsEStDt+jahEDkbhLfY6rFisHehh4OvzH2BYAUcpeHru84QIsgqt04G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);
 }
 
 div.txui-dialog div.txui-dialog-content {
@@ -1430,14 +1447,6 @@ div.txDialog div.caret {
 	transition: border-color 0.4s linear;
 }
 
-#txTemplateDesignerContainer #ribbonTabTableLayout ul.dropDownMenu a[role=menuitem] > span {
-	margin-top: 18px;
-}
-
-#txTemplateDesignerContainer #ribbonTabFormula ul.dropDownMenu a[role=menuitem] > span {
-	margin-top: 18px;
-}
-
 #txTemplateDesignerContainer div.small-menu-item-image-wrapper {
 	height: 16px;
 	width: 16px;
@@ -1467,19 +1476,17 @@ body ul.contextMenu a[role=menuitem] > span {
 }
 
 #txArrowRibbonHideWrapper {
-	background-image: url(../Icons/web/ribbon_show_hide_arrow_sprites.png);
-	background-repeat: no-repeat;
-	overflow: hidden;
 	position: absolute;
-	width: 10px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
 	left: 0px;
 	top: 0px;
-	margin: 5px;
+	margin: 4px;
+	transition: transform 0.3s;
 }
 
 #txArrowRibbonHideWrapper.down {
-	background-position: -10px 0;
+	transform: rotate(180deg);
 }
 
 #txErrMsgDiv {
@@ -1529,19 +1536,6 @@ body ul.contextMenu a[role=menuitem] > span {
 	left: -9999px;
 }
 
-#insertShapesDropDown a > span.txui-menu-icon,
-#shapeOutlineDropDown a > span.txui-menu-icon {
-	margin-top: 3px;
-}
-
-#insertImageDropDown a span.txui-menu-icon {
-	margin-top: 13px;
-}
-
-#insertChartDropDown a span.txui-menu-icon {
-	margin-top: 10px;
-}
-
 /* "Insert Table Wizard" grid */
 
 #txTemplateDesignerContainer .txInsertTableWizard {
@@ -1549,12 +1543,12 @@ body ul.contextMenu a[role=menuitem] > span {
 }
 
 #txTemplateDesignerContainer .txInsertTableWizard table {
+	width: 180px;
 	border-spacing: 3px;
 	border-collapse: separate;
 }
 
 #txTemplateDesignerContainer .txInsertTableWizard td {
-	width: 20px;
 	height: 11px;
 	border: 1px solid #646464;
 }
@@ -1640,23 +1634,4 @@ body ul.contextMenu a[role=menuitem] > span {
 #txTemplateDesignerContainer .ribbon-group .ribbon-group-layout-table .ribbon-stacked-toggle-button .ribbon-button-small-label-container,
 #txTemplateDesignerContainer .ribbon-group .ribbon-button-wrapper-small-stacked-buttons .ribbon-stacked-toggle-button .ribbon-button-small-label-container {
 	margin-top: 5px;
-}
-
-#txTemplateDesignerContainer #ribbonGroupFrameSize div.ribbon-group-content,
-#txTemplateDesignerContainer #ribbonGroupFrameProps div.ribbon-group-content {
-	height: 55px;
-}
-
-#txTemplateDesignerContainer #tblRibbonGrpFrameSize,
-#txTemplateDesignerContainer #tblRibbonGrpFrameProps {
-	margin-top: 10px;
-}
-
-#txTemplateDesignerContainer #tblRibbonGrpFrameSize img,
-#txTemplateDesignerContainer #tblRibbonGrpFrameProps img {
-	margin-right: 5px;
-}
-
-#txTemplateDesignerContainer #tblRibbonGrpFrameProps input {
-	width: 80px;
 }
