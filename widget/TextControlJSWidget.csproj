@@ -98,8 +98,8 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="TXTextControl.Web.MVC, Version=27.0.700.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
-      <HintPath>..\packages\TXTextControl.Web.27.0.700.500\lib\net45\TXTextControl.Web.MVC.dll</HintPath>
+    <Reference Include="TXTextControl.Web.MVC, Version=28.0.800.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL">
+      <HintPath>..\packages\TXTextControl.Web.28.0.800.500\lib\net45\TXTextControl.Web.MVC.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

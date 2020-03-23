@@ -1,6 +1,6 @@
 /*
  * TX Text Control Editor Widget 1.0 (http://www.textcontrol.com/)
- * Copyright 2018 Text Control GmbH
+ * Copyright 2020 Text Control GmbH
 */
 
 var TXTextControl = (function () {

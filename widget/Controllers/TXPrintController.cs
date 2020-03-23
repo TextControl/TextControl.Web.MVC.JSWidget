@@ -8,9 +8,11 @@ using System.Web.Http;
 using TXTextControl.Web;
 
 namespace TextControlJSWidget.Controllers {
+
 	public class TXPrintController : ApiController {
+
 		public HttpResponseMessage Get() {
-			var printHandler = new TXPrintHandler();
+			var printHandler = new PrintHandler();
 			printHandler.ProcessRequest(HttpContext.Current);
 			return new HttpResponseMessage(HttpStatusCode.OK);
 		}

@@ -8,7 +8,7 @@
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	line-height: normal; /* Bootstrap override */
+   line-height: normal; /* Bootstrap override */
 }
 
 #txTemplateDesignerContainer * {
@@ -18,6 +18,7 @@
 #txTemplateDesignerContainer img {
 	border: none;
 	vertical-align: baseline !important;
+	user-select: none;
 }
 
 #txTemplateDesignerContainer td {
@@ -57,6 +58,7 @@
 	height: 15px !important;
 	color: #5E5E5E !important;
 	text-decoration: none !important;
+	outline: none !important;
 }
 
 #txTemplateDesignerContainer ul.tabs li a.selected {
@@ -170,6 +172,7 @@
 #txTemplateDesignerContainer div.ribbon-group input[type=checkbox] {
 	width: 13px;
 	height: 13px;
+	margin: 4px;
 }
 
 #txTemplateDesignerContainer div.ribbon-group:first-child {
@@ -195,7 +198,7 @@
 	border-color: #ddd;
 }
 
-#txTemplateDesignerContainer div.checked-list-box {
+#txTemplateDesignerContainer div.list-box {
 	float: left;
 	border: 1px solid #ababab;
 	margin: 0px 5px;
@@ -203,31 +206,56 @@
 	overflow-y: auto;
 }
 
-#txTemplateDesignerContainer div.checked-list-box:first-child {
+#txTemplateDesignerContainer div.list-box:first-child {
 	margin-left: 0px;
 }
 
-#txTemplateDesignerContainer div.checked-list-box:last-child {
+#txTemplateDesignerContainer div.list-box:last-child {
 	margin-right: 0px;
 }
 
-#txTemplateDesignerContainer div.checked-list-box table.checked-list-box-item-container {
+#txTemplateDesignerContainer div.list-box table.list-box-item-container {
 	border-collapse: collapse;
 	font-size: 11px !important;
 	border: none;
 	margin: 0px;
 }
 
-#txTemplateDesignerContainer div.checked-list-box table.checked-list-box-item-container td {
+#txTemplateDesignerContainer div.list-box table.list-box-item-container td {
 	padding: 0px;
 }
 
 
-#txTemplateDesignerContainer div.checked-list-box table.checked-list-box-item-container td label {
+#txTemplateDesignerContainer div.list-box table.list-box-item-container td label {
 	margin: 3px 0px !important;
 	padding: 0px !important;
 	font-weight: normal !important;
 	font-size: 11px;
+}
+
+#txTemplateDesignerContainer div.list-box.items-are-selectable {
+	cursor: pointer;
+}
+
+#txTemplateDesignerContainer div.list-box.items-are-selectable table.list-box-item-container {
+	font-size: 12px !important;
+	width: 100%;
+}
+
+#txTemplateDesignerContainer div.list-box.items-are-selectable table.list-box-item-container td {
+	padding: 3px !important;
+}
+
+#txTemplateDesignerContainer div.list-box.items-are-selectable table.list-box-item-container tr td div {
+	min-height: 14px;
+}
+
+#txTemplateDesignerContainer div.list-box.items-are-selectable table.list-box-item-container tr:hover {
+	background-color: rgba(0, 124, 255, 0.26);
+}
+
+#txTemplateDesignerContainer div.list-box.items-are-selectable table.list-box-item-container tr.selected {
+	background-color: rgba(0, 114, 255, 0.36);
 }
 
 /* General ribbon button properties */
@@ -295,8 +323,8 @@
 }
 
 #txTemplateDesignerContainer div.large-ribbon-button-container {
-	display: inline-block; 
-	float: left; 
+	display: inline-block;
+	float: left;
 }
 
 #txTemplateDesignerContainer img.ribbon-button-big-image {
@@ -518,11 +546,11 @@ li.txui-menu-item.menu-item-symbol {
 }
 
 /* Place Carat Icon vertically centered */
-#txTemplateDesignerContainer ul.txui-menu > li.txui-menu-item-small > a > span.txui-menu-icon{
+#txTemplateDesignerContainer ul.txui-menu > li.txui-menu-item-small > a > span.txui-menu-icon {
 	margin-top: 2px;
 }
 
-#txTemplateDesignerContainer ul.txui-menu > li.txui-menu-item-large > a > span.txui-menu-icon{
+#txTemplateDesignerContainer ul.txui-menu > li.txui-menu-item-large > a > span.txui-menu-icon {
 	margin-top: 12px;
 }
 
@@ -551,7 +579,7 @@ li.txui-menu-item.menu-item-symbol {
 	margin-top: 2px;
 	margin-right: 4px;
 	margin-left: 0px;
-    padding: 3px;
+	padding: 3px;
 }
 
 #txTemplateDesignerContainer .txui-menu div.large-menu-item-image-container-long-caption {
@@ -648,7 +676,7 @@ li.txui-menu-item.menu-item-symbol {
 .txDialog select {
 	padding: .5px;
 	margin: 0;
-	background: white;
+	background-color: white;
 	border: 1px solid #ABABAB;
 	outline: none;
 	display: inline-block;
@@ -693,7 +721,6 @@ li.txui-menu-item.menu-item-symbol {
 	cursor: default; /* don't change cursor when moving over text areas in the ribbon bar */
 	/* overflow: hidden; */ /* This cuts off drop down menus */
 	transition: transform 0.5s;
-	-webkit-transition: -webkit-transform 0.5s;
 }
 
 #txRibbonCover {
@@ -709,7 +736,7 @@ li.txui-menu-item.menu-item-symbol {
 	position: absolute;
 	margin-top: 43px;
 	border: none;
-	background: lightgray;
+	background-color: lightgray;
 	width: 15px;
 	height: 50px;
 	z-index: 1;
@@ -722,7 +749,7 @@ li.txui-menu-item.menu-item-symbol {
 }
 
 #txTemplateDesignerContainer #ribbonbar .txRibbonScrollArrow:active {
-	background: #555555;
+	background-color: #555555;
 }
 
 #txTemplateDesignerContainer #ribbonbar .txRibbonScrollArrow:active #txBlackTriangleR {
@@ -784,7 +811,6 @@ li.txui-menu-item.menu-item-symbol {
 	border: none;
 	padding: 0;
 	transition: transform 0.5s;
-	-webkit-transition: -webkit-transform 0.5s;
 }
 
 #txTemplateDesignerContainer #selectFontSize {
@@ -797,7 +823,7 @@ li.txui-menu-item.menu-item-symbol {
 
 #txTemplateDesignerContainer canvas {
 	transition: opacity 1s;
-	-webkit-user-select: none;
+	user-select: none;
 }
 
 #txTemplateDesignerContainer #mainCanvas {
@@ -806,29 +832,34 @@ li.txui-menu-item.menu-item-symbol {
 }
 
 #txTemplateDesignerContainer div.txScrollbarContainer {
-	position: absolute; 
-	transition: opacity 1s; 
+	position: absolute;
+	transition: opacity 1s;
 }
 
 #txTemplateDesignerContainer .sidebar {
-	z-index: 5;
+	z-index: 3;
 	display: none;
+	flex: 1;
+	flex-direction: column;
 	position: absolute;
 	width: 300px; /* DEFAULT SIZE - Required for IE Browser */
 	top: 0px;
 	background-color: white;
 	min-width: 200px;
 	padding-left: 1px;
+	vertical-align: top;
+	overflow: hidden;
+	border-right: 1px solid #C0C0C0;
+	padding-right: 5px;
 }
 
-#txTemplateDesignerContainer .sidebarContainer .button:hover {
+#txTemplateDesignerContainer .sidebar .button:hover {
 	background-color: #d5e1f2;
 	text-decoration: none;
 	cursor: default;
 }
 
-
-#txTemplateDesignerContainer .sidebarContainer .closebtn {
+#txTemplateDesignerContainer .sidebar .closebtn {
 	font-size: 18pt;
 	white-space: nowrap;
 	position: absolute;
@@ -836,7 +867,7 @@ li.txui-menu-item.menu-item-symbol {
 	right: 7px;
 }
 
-#txTemplateDesignerContainer .sidebarContainer .refreshbtn {
+#txTemplateDesignerContainer .sidebar .refreshbtn {
 	font-size: 18pt;
 	white-space: nowrap;
 	position: absolute;
@@ -851,14 +882,14 @@ li.txui-menu-item.menu-item-symbol {
 	font-size: 18pt;
 	color: #2b579a;
 	white-space: nowrap;
-    margin-bottom:5px;
+	margin-bottom: 5px;
 }
 
 #txTemplateDesignerContainer .sidebar .sidebarHeaderSubTitle {
-	color:black;
-    font-size:8pt;
-    margin-left:5px;
-    margin-top:5px;
+	color: black;
+	font-size: 8pt;
+	margin-left: 5px;
+	margin-top: 5px;
 }
 
 #txTemplateDesignerContainer .sidebar .sidebarHeader {
@@ -881,16 +912,9 @@ li.txui-menu-item.menu-item-symbol {
 	border-style: solid;
 	border-width: thin;
 	border-color: #C0C0C0;
+	background-color: #F0F0F0;
 	flex: 2;
 	overflow: hidden;
-}
-
-#txTemplateDesignerContainer .sidebar .sidebarContainer {
-	display: inline-flex;
-	flex: 1;
-	vertical-align: top;
-	overflow: hidden;
-	flex-direction: column;
 }
 
 #txTemplateDesignerContainer #horRulerCanvas {
@@ -909,7 +933,7 @@ li.txui-menu-item.menu-item-symbol {
 #txTemplateDesignerContainer #statusBarCanvas {
 	position: absolute;
 	left: 0px;
-	z-index: 5;
+	z-index: 7;
 	/* border-top: 1px solid lightgray; */
 }
 
@@ -939,7 +963,7 @@ li.txui-menu-item.menu-item-symbol {
 	width: 26px;
 	padding-top: 1px;
 	text-align: center;
-    clear:right;
+	clear: right;
 }
 
 #txTemplateDesignerContainer div.menu-item-category-header {
@@ -971,32 +995,32 @@ li.txui-menu-item.menu-item-symbol {
 }
 
 .txDialog input[type=file] {
-	background: initial;
+	background-color: initial;
 }
 
 .txDialog textarea:not([disabled]),
 .txDialog input:not([disabled]):not([type=file]) {
-	background: white;
+	background-color: white;
 }
 
 .txDialog textarea:disabled,
 .txDialog input:disabled {
-	background: initial;
+	background-color: initial;
 }
 
 .txDialog input[type="checkbox"] {
-	margin: 3px 3px 3px 4px; /* Bootstrap override */
+	margin: 3px 3px 3px 4px !important; /* Bootstrap override */
 }
 
 .txDialog input[type="radio"] {
-	margin: 3px 3px 0px 5px; /* Bootstrap override */
+	margin: 3px 3px 0px 5px !important; /* Bootstrap override */
 }
 
 .txDialog legend {
 	padding: initial;
 	border: initial;
 	margin-bottom: initial;
-	font-size: 12px; /* Bootstrap override */
+	font-size: 12px !important; /* Bootstrap override */
 	width: auto;
 	display: block;
 }
@@ -1013,16 +1037,22 @@ li.txui-menu-item.menu-item-symbol {
 }
 
 /* TX Dragbar */
-#txTemplateDesignerContainer .txDragbar {
-	display: inline-block;
-	float: right;
+#txTemplateDesignerContainer .txDragBar {
+	display: none;
+	position: relative;
 	width: 5px;
 	height: 100%;
 	background-color: white;
-	border-right: 1px solid #C0C0C0;
+	z-index: 5;
+	background-color: transparent;
 }
 
-#txTemplateDesignerContainer .txDragbar:hover {
+#txTemplateDesignerContainer .txDragBar.dragging {
+	background-color: #C0C0C0;
+}
+
+
+#txTemplateDesignerContainer .txDragBar:hover {
 	cursor: ew-resize;
 }
 
@@ -1030,7 +1060,7 @@ li.txui-menu-item.menu-item-symbol {
 
 #txTemplateDesignerContainer .txScrollbar {
 	display: flex;
-	flex-direction:column;
+	flex-direction: column;
 	vertical-align: top;
 }
 
@@ -1094,7 +1124,7 @@ li.txui-menu-item.menu-item-symbol {
 	position: absolute;
 	border: none;
 	overflow: hidden;
-	background: #f0f0f0;
+	background-color: #f0f0f0;
 	z-index: 49; /* Below ribbon bar so long ribbon menus stay on top of the scroll bar */
 }
 
@@ -1102,7 +1132,7 @@ li.txui-menu-item.menu-item-symbol {
 
 #txTemplateDesignerContainer div.scroll-button {
 	position: absolute;
-	background: #f0f0f0;
+	background-color: #f0f0f0;
 	color: #606060;
 	cursor: default;
 	z-index: 49; /* Below ribbon bar so long ribbon menus stay on top of the scroll bar */
@@ -1124,11 +1154,11 @@ li.txui-menu-item.menu-item-symbol {
 }
 
 #txTemplateDesignerContainer div.scroll-button:hover {
-	background: #dadada;
+	background-color: #dadada;
 }
 
 #txTemplateDesignerContainer div.scroll-button:active {
-	background: #606060;
+	background-color: #606060;
 }
 
 #txTemplateDesignerContainer .scroll-button-up > div.scroll-button-arrow-wrapper {
@@ -1143,26 +1173,19 @@ li.txui-menu-item.menu-item-symbol {
 	background-position: -7px 0px;
 }
 
-/* START TrackChanges Scrollbar arrow buttons */
-
 #scroll-button-up2 {
-	/*position: absolute;*/
-	background: #f0f0f0;
+	background-color: #f0f0f0;
 	color: #606060;
 	cursor: default;
 	z-index: 49; /* Below ribbon bar so long ribbon menus stay on top of the scroll bar */
-	/*display: none;*/
-	/*width: 15px;
-    height: 17px;*/
-	/*padding: 5px 4px 5px 4px;*/
 	text-align: center;
 }
 
 #scroll-button-arrow-img {
-	/*position:center;*/
 	display: inline-block;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAHBAMAAABkX3erAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAA9QTFRFAAAA////AAAAYGBg////KDV7UAAAAAJ0Uk5TAAB2k804AAAAlUlEQVQY0zWQ0YkFMQwDB9sFGK6BrCvwogay4P5reh/J6U8gBjGoSdTpOHgtoFYaBjYbmJ1BQOAiXaD2RlZgBbVsUTEQA7NjM6BONS65XNSiFlZlZcVsZhMzMTHg+hOo9UqN1YHWU7U4i9nzzex/qvB2camFLSsudYh9oKSLN2le7tcnWTzcr1+y+eAa4OQauO0auO0H3hkae9g+mQAAAAAASUVORK5CYII=);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAAOCAYAAAC7DldHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJySURBVGhDzZpRcoMwDERDTpqcLDlpqM1IjCnelWSLTN4XQfJaHl5pM9Pl8Xistw6v12uRyxDP53MoT9ehvlL/lNpdPrqome/3Wz4dWdd16HzLsnTPZ+XpOtRX69GZZI18OjF0vgIKtPJ0Heqr9ehM650IAU+OmJWzQvZdSu0j1yaaw4SQSzezclbYvpGZml60tzurAa2h5yu069i+kZm23u2NlCEp6o3IqZB9XZL+X58hKeqNyKmwfT0zdXrQDGZWA+ql5yv01rF9PTPtPfuvzBlJUc+InAqpUUnRuhlJUc+InMoFNTQLzGqIZiosO6V2+JtuRFJUm5FTIT1dSa3MEUlRbUZOJbqvIxPNxNahGj1fwZqlEt33dO/0pSMiKRJiUM56z71H4SAp6TsQkRQJkSGnwnrbWiATzdZbjzLp+QreWSqst611++rXQLk8Ysln1RFg3VrWbT8sIt0po+Z6JRT2zB6WfFYdMZOLaghjFpSla6w6YiY3dL7CAh/gFzmIJNfdg1RJ5dKCyvltWpGYVIZwByK9X6Cdhc0VmXnr7T5Ez9sRyZLxlpN7o5KacnrejkiAjLcck8sjnqMHzdiuQxmh8xV6OWw+a/bK3nN6kB45FSSLU1IqktTcswgpcipIBK+koyKO1gQ0W28dynKdr8BmSakdHmZETgXVDEldv4KlxztTqpwKqlmSOkQK7+vIRDOxdahGz1ewZqlE9z3d2x/oiJwK6iGZppwK6232vUROBfXMZCqst605MpFQnllQz0ymwnrbWrdv+xY/I2dLVk42GSJVsnIuIEOkSlZOGj/zzyJXkS3VD0qaLVV23gS32x8ghukb8TKN+AAAAABJRU5ErkJggg==);
 	background-repeat: no-repeat;
+	background-size: 84px 7px;
 	overflow: hidden;
 	pointer-events: none;
 	width: 7px;
@@ -1170,8 +1193,6 @@ li.txui-menu-item.menu-item-symbol {
 	background-position: -14px 0px; /* Ausrichtung */
 	margin: 5px 4px 5px 4px; /* horizontal buttons*/
 }
-
-/* END TrackChanges Scrollbar Items*/
 
 /* Scroll button arrow sprites */
 
@@ -1185,8 +1206,9 @@ li.txui-menu-item.menu-item-symbol {
 
 #txTemplateDesignerContainer div.scroll-button-arrow-wrapper {
 	position: relative;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAHBAMAAABkX3erAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAA9QTFRFAAAA////AAAAYGBg////KDV7UAAAAAJ0Uk5TAAB2k804AAAAlUlEQVQY0zWQ0YkFMQwDB9sFGK6BrCvwogay4P5reh/J6U8gBjGoSdTpOHgtoFYaBjYbmJ1BQOAiXaD2RlZgBbVsUTEQA7NjM6BONS65XNSiFlZlZcVsZhMzMTHg+hOo9UqN1YHWU7U4i9nzzex/qvB2camFLSsudYh9oKSLN2le7tcnWTzcr1+y+eAa4OQauO0auO0H3hkae9g+mQAAAAAASUVORK5CYII=);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAAOCAYAAAC7DldHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJySURBVGhDzZpRcoMwDERDTpqcLDlpqM1IjCnelWSLTN4XQfJaHl5pM9Pl8Xistw6v12uRyxDP53MoT9ehvlL/lNpdPrqome/3Wz4dWdd16HzLsnTPZ+XpOtRX69GZZI18OjF0vgIKtPJ0Heqr9ehM650IAU+OmJWzQvZdSu0j1yaaw4SQSzezclbYvpGZml60tzurAa2h5yu069i+kZm23u2NlCEp6o3IqZB9XZL+X58hKeqNyKmwfT0zdXrQDGZWA+ql5yv01rF9PTPtPfuvzBlJUc+InAqpUUnRuhlJUc+InMoFNTQLzGqIZiosO6V2+JtuRFJUm5FTIT1dSa3MEUlRbUZOJbqvIxPNxNahGj1fwZqlEt33dO/0pSMiKRJiUM56z71H4SAp6TsQkRQJkSGnwnrbWiATzdZbjzLp+QreWSqst611++rXQLk8Ysln1RFg3VrWbT8sIt0po+Z6JRT2zB6WfFYdMZOLaghjFpSla6w6YiY3dL7CAh/gFzmIJNfdg1RJ5dKCyvltWpGYVIZwByK9X6Cdhc0VmXnr7T5Ez9sRyZLxlpN7o5KacnrejkiAjLcck8sjnqMHzdiuQxmh8xV6OWw+a/bK3nN6kB45FSSLU1IqktTcswgpcipIBK+koyKO1gQ0W28dynKdr8BmSakdHmZETgXVDEldv4KlxztTqpwKqlmSOkQK7+vIRDOxdahGz1ewZqlE9z3d2x/oiJwK6iGZppwK6232vUROBfXMZCqst605MpFQnllQz0ymwnrbWrdv+xY/I2dLVk42GSJVsnIuIEOkSlZOGj/zzyJXkS3VD0qaLVV23gS32x8ghukb8TKN+AAAAABJRU5ErkJggg==);
 	background-repeat: no-repeat;
+	background-size: 84px 7px;
 	overflow: hidden;
 	pointer-events: none;
 	width: 7px;
@@ -1262,7 +1284,7 @@ div.txui-dialog {
 	border-radius: 0px;
 	font-size: 10pt;
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-	background: #fbfbfb;
+	background-color: #fbfbfb;
 }
 
 div.txui-dialog * {
@@ -1287,6 +1309,7 @@ div.txui-dialog-titlebar button.txui-dialog-titlebar-close {
 	top: 0;
 	margin: 0;
 	width: 30px;
+	outline: none;
 }
 
 div.txui-dialog-titlebar button.txui-dialog-titlebar-close:hover {
@@ -1294,7 +1317,18 @@ div.txui-dialog-titlebar button.txui-dialog-titlebar-close:hover {
 }
 
 div.txui-dialog-titlebar button.txui-dialog-titlebar-close span.txui-icon {
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAADwCAMAAADYSUr5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjExR/NCNwAAAQ5QTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7ilbVgAAAFl0Uk5TAAECAwQGCAoNEBMWGRocHh8gISIjJCcpLC8xMjM0ODw/QEJFR0hKS1BRU1VaYGJjZmhqbW9xfH+AgoWHjI+RlJmcnqCipaiqq62vsrW4vL6/w8bIzM/f7/0YiMXlAAAO7klEQVR42u1dC2PbthFG2kwzHTip69YtVSYr82jUpZrVdV7drJkTteu2rNvkTV56//+PDCBF4u7wEi2Zki188usIPnAfD8DdAaSFSEhI2AJIkDuuP2w5AytXT0JYf4kZ0Dv3SwizQNCgBPD6kHJdKvEWAFvFwAXY8dWfvZoEt0CbAMnrQ8r5HbQI4IfbF7B2lj0yYNXfrUKg3GZQBA0IQg1isbMM7rTeBs4t2K4iv8G2hQTvsG0BgQr0bwFuUgK3MGjBzh2sPiBkgv33AZseBXgT6n8USI5QQkJCQkJCQsLGPMEN+0HSitaAO+8yoBAAD/Blp3yAlRBSZ++VEkcFLAKsHfjuNFyU1gU4ATIYPPYaDFn1d9c4UOzIqMjA4SKSAoSKAOivgYMzBeSvsVwmHyCDfMbSB5sPhyVcZz5AxprgtoXDt30USEhISEhISEjYoKe1ujO/0vlhswrYoU9QoSsEStDt+jahEDkbhLfY6rFisHehh4OvzH2BYAUcpeHru84QIsgqt04G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);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADISURBVFhH7ZFRCsMwDEPT3f/OXQUxZKsdS85gjOX9tCSV9MbaZpNxXvRXGSZ79KfLWHBc9FcKNhtejAUGK6Fk3UOvwMgk1OztYFZgRBKV7MeKKhngCgClsDoOQgHAFDNE42AqAFYlZuMgFQBViWwcUAJAlWDGAS0AWAl2HDz682v8xl+gjhuMRPpBddzIJKaXq+PGTCK8YMatWPn2HfewUliVuB1Ui0AlKxdF44aaDcu8omzcULL0r2HHjZXsC2ORykp28y+09gQL+JQIsvLQEgAAAABJRU5ErkJggg==);
+	background-position: 0px 0px;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+}
+
+.txui-widget-content table {
+   color: #22222;
+}
+
+div.txui-dialog div.txui-dialog-content table {
+	font-size: 12px;
 }
 
 div.txui-dialog div.txui-dialog-content {
@@ -1313,7 +1347,7 @@ div.txui-dialog div.txui-dialog-content {
 div.txui-dialog-content input[type=text],
 div.txui-dialog-content input[type=password],
 div.txui-dialog-content textarea {
-	border: 1px solid gray;
+	border: 1px solid #ABABAB;
 }
 
 div.txui-dialog-content input[type=text]:focus,
@@ -1344,7 +1378,7 @@ div.txui-dialog-content fieldset {
 
 div.txui-dialog-content select {
 	background-color: white;
-	border: 1px solid gray;
+	border: 1px solid #ABABAB;
 }
 
 div.txui-dialog-content td,
@@ -1354,6 +1388,10 @@ div.txui-dialog-content th {
 
 div.txui-dialog-content table {
 	border-spacing: 2px !important; /* Bootstrap override */
+}
+
+div.txui-dialog-content button {
+	outline: none !important;
 }
 
 .txDialog div.txui-tabs {
@@ -1395,14 +1433,21 @@ div.txui-dialog div.txui-dialog-buttonpane {
 }
 
 div.txui-dialog-buttonset button.txui-button {
-	border: 1px solid #acacac;
-	background: #e5e5e5;
+	border: 1px solid #ADADAD;
+	background: #E3E3E3;
 	min-width: 70px;
+	outline: none !important;
 }
 
 div.txui-dialog-buttonset button.txui-button:hover {
-	border: 1px solid #7eb4ea;
-	background: #e3f0fc;
+	border: 1px solid #1784DB;
+	background: #e4f0fc;
+}
+
+div.txui-dialog-buttonset button.txui-button:active,
+div.txui-dialog-content button:active {
+	border: 1px solid #1784DB !important;
+	background-color: #CEE5FC !important;
 }
 
 .txDialog .txui-tabs-active a {
@@ -1425,7 +1470,7 @@ div.txDialog div.caret {
 	border: none;
 	margin: 0px;
 	padding: 0px;
-	background: #5E5E5E;
+	background-color: #5E5E5E;
 	/* Arbitrary initial size */
 	width: 1px;
 	height: 20px;
@@ -1472,7 +1517,7 @@ body ul.contextMenu a[role=menuitem] > span {
 }
 
 #txBtnRibbonHide:hover {
-	background: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 #txArrowRibbonHideWrapper {
@@ -1506,6 +1551,18 @@ body ul.contextMenu a[role=menuitem] > span {
 	z-index: 9999;
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 	cursor: default;
+	transition: opacity 0.2s;
+}
+
+#txUserInputBlocker {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	z-index: 9998;
+	transition: opacity 0.2s;
 }
 
 #txTemplateDesignerContainer .txui-widget-content a {
@@ -1531,8 +1588,8 @@ body ul.contextMenu a[role=menuitem] > span {
 #txPrintFrame {
 	position: fixed;
 	overflow: hidden;
-	width: 1px;
-	height: 1px;
+	width: 300px;
+	height: 300px;
 	left: -9999px;
 }
 
@@ -1588,6 +1645,7 @@ body ul.contextMenu a[role=menuitem] > span {
 	font-size: 11px !important;
 	font-family: Arial, Helvetica, sans-serif !important;
 	font-weight: 400;
+	padding-top: 3px;
 }
 
 #txTemplateDesignerContainer .ribbon-group-layout-table input[type=number] {
@@ -1634,4 +1692,9 @@ body ul.contextMenu a[role=menuitem] > span {
 #txTemplateDesignerContainer .ribbon-group .ribbon-group-layout-table .ribbon-stacked-toggle-button .ribbon-button-small-label-container,
 #txTemplateDesignerContainer .ribbon-group .ribbon-button-wrapper-small-stacked-buttons .ribbon-stacked-toggle-button .ribbon-button-small-label-container {
 	margin-top: 5px;
+}
+
+#txTemplateDesignerContainer .txOverlayControl {
+	position: absolute;
+	max-height: none !important;
 }
