@@ -44,12 +44,5 @@ window.onload = function() {
 	textControl1 = new TXTextControlWeb("myTextControlContainer");
 };
 </script>
-```
-The widget has (nearly) the same [JavaScript API](https://www.textcontrol.com/documentation/?param=n_txdotnet.ref.javascript.htm&product=tx) like the MVC version of TX Text Control Web. All objects, methods, properties and events can be used in the same way. For example, in order to load an HTML document into the editor, the following code can be used:
-```javascript
-function loadDocument()
-{
-	textControl1.loadDocument(
-	TXTextControl.StreamType.HTMLFormat, btoa("<strong>This is a test</strong>"));
-}
+
 ```
