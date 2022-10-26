@@ -787,7 +787,7 @@ body .txui-tooltip {
 /* Component containers
 ----------------------------------*/
 .txui-widget {
-	font-family: Arial,Verdana,sans-serif;
+	font-family: "Segoe UI", "Segoe UI Web", Arial, Helvetica, Verdana, sans-serif;
 	font-size: 1.1em;
 }
 .txui-widget .txui-widget {
@@ -797,11 +797,11 @@ body .txui-tooltip {
 .txui-widget select,
 .txui-widget textarea,
 .txui-widget button {
-	font-family: Arial,Verdana,sans-serif;
+	font-family: "Segoe UI", "Segoe UI Web", Arial, Helvetica, Verdana, sans-serif;
 	font-size: 1em;
 }
 .txui-widget-content {
-	border: 1px solid #aaaaaa;
+	border: 1px solid #c0c0c0;
 	background: #ffffff;
 	color: #222222;
 }
@@ -809,7 +809,7 @@ body .txui-tooltip {
 	color: #222222;
 }
 .txui-widget-header {
-	border: 1px solid #aaaaaa;
+	border: 1px solid #c0c0c0;
 	background: #cccccc;
 	color: #222222;
 	font-weight: bold;
@@ -855,7 +855,7 @@ body .txui-tooltip {
 .txui-state-active,
 .txui-widget-content .txui-state-active,
 .txui-widget-header .txui-state-active {
-	border: 1px solid #aaaaaa;
+	border: 1px solid #c0c0c0;
 	background: #ffffff;
 	font-weight: normal;
 	color: #212121;
@@ -1166,7 +1166,7 @@ body .txui-tooltip {
 .txui-widget-shadow {
 	margin: -8px 0 0 -8px;
 	padding: 8px;
-	background: #aaaaaa;
+	background: #c0c0c0;
 	opacity: .3;
 	filter: Alpha(Opacity=30);
 	border-radius: 8px;
