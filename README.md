@@ -1,3 +1,5 @@
+# ⚠️ Warning: This project is tagged as obsolete and is no longer supported
+
 # Welcome to the Text Control JS Widget
 This ASP.NET MVC project hosts the IFRAME based JavaScript widget wrapper for the HTML5 based editor. This technology preview version can be tested in your application simply by adding a JavaScript package to your HTML.
 
